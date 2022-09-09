@@ -39,11 +39,23 @@
         <input type="hidden" id="Ub" name="Ub" readonly>
     </form>
     <?php
+
+try {
+
+
+
+
     echo '<script>console.log("Paso 1")</script>';
+
+
+
+
     if (isset($_POST['btEnviar'])) {
         echo '<script>console.log("Paso 2")</script>';
         require_once 'http://51.222.14.197:81/asistencia-ecokhemia/config.php';
+        echo '<script>console.log("Paso 3")</script>';
         require_once 'http://51.222.14.197:81/asistencia-ecokhemia/class/FechaPerfil.php';
+        echo '<script>console.log("Paso 4")</script>';
         $FechaPerfil = new FechaPerfil();
         $listR = $_POST["lista"];
         $cedula = ($_POST['ced']);
@@ -185,6 +197,11 @@
             }
         }
     }
+
+} catch (Exception $e) {
+    log_exception($e);
+}
+
     ?>
 </body>
 </html>
