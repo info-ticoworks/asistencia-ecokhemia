@@ -35,7 +35,7 @@
                            <!-- <input type="checkbox" name="00">
                            <p>¿Mantener sesion iniciada?</p>--> 
         <input type="submit" value="Enviar" name="btEnviar" id="btEnviar">
-        <p>¿Ya has registrado la hora? <a class="" href="https://asistencia.ecokhemia.net">Volver atras</a></p>
+        <p>¿Ya has registrado la hora? <a class="" href="http://51.222.14.197:81/asistencia-ecokhemia/">Volver atras</a></p>
         <input type="hidden" id="Ub" name="Ub" readonly>
     </form>
     <?php
