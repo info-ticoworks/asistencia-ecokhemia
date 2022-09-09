@@ -6,7 +6,7 @@ $usuario = "asist-ecok";
 $clave = "CkowfYQ34JJdQ8Um4ILE";
 $bd="asistencia-ecokhemia";
 $conexion = mysqli_connect($host, $usuario, $clave, $bd);
-
+echo '<script>console.log("Paso 4")</script>';
 //$servername = "107.180.13.125";
 //$username = "asist-ecok";
 //$password = "CkowfYQ34JJdQ8Um4ILE";
@@ -22,7 +22,6 @@ if ($conexion->connect_error) {
        echo '<script>console.log("TicoWorks says: Conexión Establecida 07-08-2022")</script>';
 }
 // echo "Connected successfully";
-echo '<script>console.log("Connected successfully")</script>';
 } catch (Exception $e) {
   log_exception($e);
   echo '<script>console.log("Errorcito")</script>';
