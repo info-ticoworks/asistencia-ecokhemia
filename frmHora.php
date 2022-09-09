@@ -22,7 +22,7 @@
            }
         </script>
         <form action="frmHora.php" class="form-box" method="POST"> 
-            <p><img alt="" width="280" height="135" src="image/Sinfondo.png"></p> 
+            <p><img alt="" width="280" height="135" src="./image/Sinfondo.png"></p> 
             <h3 class="form-title">Registrar hora</h3>
             <input type="text" placeholder="Cedula" name="ced" id="ced" autofocus>
             <select id="lista" name="lista">
@@ -52,9 +52,9 @@ try {
 
     if (isset($_POST['btEnviar'])) {
         echo '<script>console.log("Paso 2")</script>';
-        require_once './asistencia-ecokhemia/config.php';
+        require_once './config.php';
         echo '<script>console.log("Paso 3")</script>';
-        require_once './asistencia-ecokhemia/class/FechaPerfil.php';
+        require_once './class/FechaPerfil.php';
         echo '<script>console.log("Paso 4")</script>';
         $FechaPerfil = new FechaPerfil();
         $listR = $_POST["lista"];

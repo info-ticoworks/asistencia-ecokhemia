@@ -1,4 +1,5 @@
 <?php
+echo '<script>console.log("Paso 3")</script>';
 $host = "107.180.13.125";
 $usuario = "asist-ecok";
 $clave = "CkowfYQ34JJdQ8Um4ILE";
