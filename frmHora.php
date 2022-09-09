@@ -53,9 +53,9 @@ try {
     if (isset($_POST['btEnviar'])) {
         echo '<script>console.log("Paso 2")</script>';
         require_once './config.php';
-        echo '<script>console.log("Paso 3")</script>';
-        require_once './class/FechaPerfil.php';
         echo '<script>console.log("Paso 4")</script>';
+        require_once './class/FechaPerfil.php';
+        echo '<script>console.log("Paso 5")</script>';
         $FechaPerfil = new FechaPerfil();
         $listR = $_POST["lista"];
         $cedula = ($_POST['ced']);
