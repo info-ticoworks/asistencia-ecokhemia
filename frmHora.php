@@ -35,7 +35,7 @@
                            <!-- <input type="checkbox" name="00">
                            <p>¿Mantener sesion iniciada?</p>--> 
         <input type="submit" value="Enviar" name="btEnviar" id="btEnviar">
-        <p>¿Ya has registrado la hora? <a class="" href="http://51.222.14.197:81/asistencia-ecokhemia/">Volver atras</a></p>
+        <p>¿Ya has registrado la hora? <a class="" href="./asistencia-ecokhemia/">Volver atras</a></p>
         <input type="hidden" id="Ub" name="Ub" readonly>
     </form>
     <?php
@@ -52,9 +52,9 @@ try {
 
     if (isset($_POST['btEnviar'])) {
         echo '<script>console.log("Paso 2")</script>';
-        require_once './config.php';
+        require_once './asistencia-ecokhemia/config.php';
         echo '<script>console.log("Paso 3")</script>';
-        require_once './class/FechaPerfil.php';
+        require_once './asistencia-ecokhemia/class/FechaPerfil.php';
         echo '<script>console.log("Paso 4")</script>';
         $FechaPerfil = new FechaPerfil();
         $listR = $_POST["lista"];
