@@ -40,8 +40,8 @@
     </form>
     <?php
     if (isset($_POST['btEnviar'])) {
-        require_once './asistencia-ecokhemia/config.php';
-        require_once './asistencia-ecokhemia/class/FechaPerfil.php';
+        require_once 'http://51.222.14.197:81/asistencia-ecokhemia/config.php';
+        require_once 'http://51.222.14.197:81/asistencia-ecokhemia/class/FechaPerfil.php';
         $FechaPerfil = new FechaPerfil();
         $listR = $_POST["lista"];
         $cedula = ($_POST['ced']);
