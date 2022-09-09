@@ -1,4 +1,5 @@
 <?php
+echo '<script>console.log("Carga de FechaPerfil - Paso 1")</script>';
 class FechaPerfil {
     private $user;
     private $date;
