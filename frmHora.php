@@ -73,6 +73,7 @@ try {
                 $FechaPerfil->setDate($date);
                 $FechaPerfil->setUser($cedula);
                 echo '<p>' . $FechaPerfil->insertarHoraIngreso(). '</p>';
+                echo '<p>' . noti_ingreso.php() . '</p>';
                 echo "<script>
             Swal.fire({
             icon: 'success',
