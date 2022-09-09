@@ -109,10 +109,10 @@ try {
                 echo "cURL Error #:" . $err;
                 } else {
                 //echo $response;
-                echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                echo "<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>";
                 }
 
-                echo '<script>console.log("Paso 2 Notificacion")</script>';
+                echo "<script>console.log("Paso 2 Notificacion")</script>";
 
     
                 echo "<script>
