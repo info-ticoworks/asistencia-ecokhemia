@@ -1,0 +1,8 @@
+php_flag display_errors 1
+
+#Rewrite HTTP to HTTPS
+RewriteEngine On 
+RewriteCond %{HTTPS} off 
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+ini_set("include_path", '/home/ticoworks/php:' . ini_get("include_path") );
