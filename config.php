@@ -1,12 +1,10 @@
 <?php
 try {
-echo '<script>console.log("Paso 3")</script>';
 $host = "107.180.13.125";
 $usuario = "asist-ecok";
 $clave = "CkowfYQ34JJdQ8Um4ILE";
 $bd="asistencia-ecokhemia";
 $conexion = mysqli_connect($host, $usuario, $clave, $bd);
-echo '<script>console.log("Paso 4")</script>';
 //$servername = "107.180.13.125";
 //$username = "asist-ecok";
 //$password = "CkowfYQ34JJdQ8Um4ILE";

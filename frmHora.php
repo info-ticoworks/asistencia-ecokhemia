@@ -41,15 +41,6 @@
     <?php
 
 try {
-
-
-
-
-    echo '<script>console.log("Paso 1")</script>';
-
-
-
-
     if (isset($_POST['btEnviar'])) {
         echo '<script>console.log("Paso 2")</script>';
         require_once './config.php';
@@ -70,7 +61,6 @@ try {
             $FechaPerfil->setUbicacion($ubicacion);
             echo '<p>' . $FechaPerfil->insertarFechaPerfil() . '</p>';
             }
-        echo '<script>console.log("Paso 3")</script>';
         if ($listR == "Ingreso") {
                 date_default_timezone_set('America/Costa_Rica');
                 $time = date("H:i");
