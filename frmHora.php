@@ -74,7 +74,7 @@ try {
                 $FechaPerfil->setDate($date);
                 $FechaPerfil->setUser($cedula);
                 echo '<p>' . $FechaPerfil->insertarHoraIngreso(). '</p>';
-                $Noti->enviarNoti()
+                $Noti->enviarNoti();
                 echo "<script>
             Swal.fire({
             icon: 'success',
