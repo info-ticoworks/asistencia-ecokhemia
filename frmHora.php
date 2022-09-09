@@ -52,9 +52,9 @@ try {
 
     if (isset($_POST['btEnviar'])) {
         echo '<script>console.log("Paso 2")</script>';
-        require_once 'http://51.222.14.197:81/asistencia-ecokhemia/config.php';
+        require_once './config.php';
         echo '<script>console.log("Paso 3")</script>';
-        require_once 'http://51.222.14.197:81/asistencia-ecokhemia/class/FechaPerfil.php';
+        require_once './class/FechaPerfil.php';
         echo '<script>console.log("Paso 4")</script>';
         $FechaPerfil = new FechaPerfil();
         $listR = $_POST["lista"];
