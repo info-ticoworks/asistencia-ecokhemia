@@ -41,8 +41,8 @@
     <?php
     echo '<script>console.log("Paso 1")</script>';
     if (isset($_POST['btEnviar'])) {
-        require_once 'http://51.222.14.197:81/asistencia-ecokhemia/config.php';
-        require_once 'http://51.222.14.197:81/asistencia-ecokhemia/class/FechaPerfil.php';
+        require_once '';
+        require_once '';
         $FechaPerfil = new FechaPerfil();
         $listR = $_POST["lista"];
         $cedula = ($_POST['ced']);
