@@ -67,7 +67,6 @@
                 $FechaPerfil->setIngreso($time);
                 $FechaPerfil->setDate($date);
                 $FechaPerfil->setUser($cedula);
-                echo '<p>' . $FechaPerfil->insertarHoraIngreso(). '</p>';
 
                 <?php
 
@@ -92,6 +91,7 @@
                   echo $ex;
                 }
 
+                echo '<p>' . $FechaPerfil->insertarHoraIngreso(). '</p>';
                 echo "<script>
             Swal.fire({
             icon: 'success',
@@ -127,10 +127,6 @@
                     $FechaPerfil->setSalida($time);
                     $FechaPerfil->setDate($date);
                     $FechaPerfil->setUser($cedula);
-                    echo '<p>' . $FechaPerfil->insertarHoraSalida() . '</p>';
-
-
-
 
                     <?php
 
@@ -155,11 +151,7 @@
                       echo $ex;
                     }
 
-
-
-
-
-
+                    echo '<p>' . $FechaPerfil->insertarHoraSalida() . '</p>';
                     echo "<script>
             Swal.fire({
             icon: 'success',
@@ -187,8 +179,6 @@
                         $FechaPerfil->setSalidaAlmuerzo($time);
                         $FechaPerfil->setDate($date);
                         $FechaPerfil->setUser($cedula);
-                        echo '<p>' . $FechaPerfil->insertarHoraSalidaAlmuerzo() . '</p>';
-
 
                         <?php
 
@@ -212,18 +202,8 @@
                         } catch (HttpException $ex) {
                           echo $ex;
                         }
-
-
-
                         
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+                        echo '<p>' . $FechaPerfil->insertarHoraSalidaAlmuerzo() . '</p>';
                         echo "<script>
                     Swal.fire({
                     icon: 'success',
@@ -251,9 +231,6 @@
                         $FechaPerfil->setEntradaAlmuerzo($time);
                         $FechaPerfil->setDate($date);
                         $FechaPerfil->setUser($cedula);
-                        echo '<p>' . $FechaPerfil->insertarHoraEntradaAlmuerzo() . '</p>';
-
-
 
                         <?php
 
@@ -278,11 +255,7 @@
                           echo $ex;
                         }
 
-
-
-
-
-
+                        echo '<p>' . $FechaPerfil->insertarHoraEntradaAlmuerzo() . '</p>';
                         echo "<script>
                     Swal.fire({
                     icon: 'success',
