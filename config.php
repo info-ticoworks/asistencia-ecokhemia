@@ -1,4 +1,5 @@
 <?php
+try {
 echo '<script>console.log("Paso 3")</script>';
 $host = "107.180.13.125";
 $usuario = "asist-ecok";
@@ -22,5 +23,9 @@ if ($conexion->connect_error) {
 }
 // echo "Connected successfully";
 echo '<script>console.log("Connected successfully")</script>';
+} catch (Exception $e) {
+  log_exception($e);
+  echo '<script>console.log("Errorcito")</script>';
+}
 
 ?>
