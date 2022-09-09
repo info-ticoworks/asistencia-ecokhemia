@@ -21,5 +21,6 @@ if ($conexion->connect_error) {
        echo '<script>console.log("TicoWorks says: Conexión Establecida 07-08-2022")</script>';
 }
 // echo "Connected successfully";
+echo '<script>console.log("Connected successfully")</script>';
 
 ?>
