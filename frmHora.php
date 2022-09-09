@@ -38,6 +38,7 @@
         <p>¿Ya has registrado la hora? <a class="" href="http://51.222.14.197:81/asistencia-ecokhemia/">Volver atras</a></p>
         <input type="hidden" id="Ub" name="Ub" readonly>
     </form>
-
+    <?php
+ ?>
 </body>
 </html>
