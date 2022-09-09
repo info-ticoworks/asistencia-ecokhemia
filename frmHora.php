@@ -39,7 +39,7 @@
         <input type="hidden" id="Ub" name="Ub" readonly>
     </form>
     <?php
-    echo '<script>console.log("Super")</script>';
+    echo '<script>console.log("Paso 1")</script>';
     if (isset($_POST['btEnviar'])) {
         require_once 'http://51.222.14.197:81/asistencia-ecokhemia/config.php';
         require_once 'http://51.222.14.197:81/asistencia-ecokhemia/class/FechaPerfil.php';
@@ -57,7 +57,7 @@
             $FechaPerfil->setUbicacion($ubicacion);
             echo '<p>' . $FechaPerfil->insertarFechaPerfil() . '</p>';
             }
-        
+        echo '<script>console.log("Paso 2")</script>';
         if ($listR == "Ingreso") {
                 date_default_timezone_set('America/Costa_Rica');
                 $time = date("H:i");
