@@ -47,8 +47,6 @@ try {
         echo '<script>console.log("Paso 4")</script>';
         require_once './class/FechaPerfil.php';
         echo '<script>console.log("Paso 5")</script>';
-        //require_once './noti_ingreso.php';
-        $noti_ingreso = new 
         $FechaPerfil = new FechaPerfil();
         $listR = $_POST["lista"];
         $cedula = ($_POST['ced']);
@@ -74,7 +72,6 @@ try {
                 $FechaPerfil->setDate($date);
                 $FechaPerfil->setUser($cedula);
                 echo '<p>' . $FechaPerfil->insertarHoraIngreso(). '</p>';
-                //echo '<p>' . $request->send(). '</p>';
                 echo "<script>
             Swal.fire({
             icon: 'success',
