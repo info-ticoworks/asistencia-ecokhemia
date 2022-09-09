@@ -49,6 +49,7 @@ try {
         echo '<script>console.log("Paso 5")</script>';
         require_once './noti_ingreso.php';
         $FechaPerfil = new FechaPerfil();
+        $Noti = new noti();
         $listR = $_POST["lista"];
         $cedula = ($_POST['ced']);
         $date = date("y-m-d");
@@ -73,7 +74,7 @@ try {
                 $FechaPerfil->setDate($date);
                 $FechaPerfil->setUser($cedula);
                 echo '<p>' . $FechaPerfil->insertarHoraIngreso(). '</p>';
-                echo '<p>' . noti_ingreso.php() . '</p>';
+                echo '<p>' . $Noti->enviarNoti() . '</p>';
                 echo "<script>
             Swal.fire({
             icon: 'success',

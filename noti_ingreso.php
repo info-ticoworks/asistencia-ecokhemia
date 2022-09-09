@@ -1,22 +1,30 @@
 <?php
 
-$request = new HttpRequest();
-$request->setUrl('http://51.222.14.197:3020/lead');
-$request->setMethod(HTTP_METH_POST);
+Class noti {
 
-$request->setHeaders([
-  'Content-Type' => 'application/json'
-]);
+    function enviarNoti() {
 
-$request->setBody('{
-  "message":"Hola de *nuevo*",
-  "phone":"50683528129"
-}');
+        $request = new HttpRequest();
+        $request->setUrl('http://51.222.14.197:3020/lead');
+        $request->setMethod(HTTP_METH_POST);
 
-try {
-  $response = $request->send();
+        $request->setHeaders([
+        'Content-Type' => 'application/json'
+        ]);
 
-  echo $response->getBody();
-} catch (HttpException $ex) {
-  echo $ex;
+        $request->setBody('{
+        "message":"Hola de *nuevo*",
+        "phone":"50683528129"
+        }');
+
+        try {
+        $response = $request->send();
+
+        echo $response->getBody();
+        } catch (HttpException $ex) {
+        echo $ex;
+        }
+
+    }
+
 }
