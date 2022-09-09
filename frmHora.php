@@ -47,7 +47,7 @@ try {
         echo '<script>console.log("Paso 4")</script>';
         require_once './class/FechaPerfil.php';
         echo '<script>console.log("Paso 5")</script>';
-        require_once './noti_ingreso.php';
+        //require_once './noti_ingreso.php';
         $noti_ingreso = new 
         $FechaPerfil = new FechaPerfil();
         $listR = $_POST["lista"];
