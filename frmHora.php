@@ -55,9 +55,10 @@ try {
         $date = date("y-m-d");
         $ubicacion = $_POST['Ub'];
 
-        $queryNombre = "SELECT * from Perfiles where Cedula = '$cedula'";
+        $queryNombre = "SELECT Nombre from Perfiles where Cedula = '$cedula'";
         $consNombre = mysqli_query($conexion, $queryNombre);
         $colaborador = mysql_fetch_array($consNombre);
+        echo $colaborador;
 
 
 
