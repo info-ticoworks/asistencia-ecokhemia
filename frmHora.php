@@ -61,6 +61,7 @@ try {
             $FechaPerfil->setUser($cedula);
             $FechaPerfil->setDate($date);
             $FechaPerfil->setUbicacion($ubicacion);
+            $Noti->setCedula($cedula);
             echo '<p>' . $FechaPerfil->insertarFechaPerfil() . '</p>';
             }
         if ($listR == "Ingreso") {

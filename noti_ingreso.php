@@ -2,7 +2,7 @@
 echo '<script>console.log("Carga de archivo NotiWhats")</script>';
 Class NotiWhats {
 
-  private $cedula;
+  public $cedula;
 
   public function __construct() {
     $this->cedula = "";
@@ -19,7 +19,17 @@ Class NotiWhats {
   function enviarNoti() {
     echo '<script>console.log("Paso 1 - Envío de Notificación por WhatsApp")</script>';
     $curl = curl_init();
+
+
+
+
+
     curl_setopt_array($curl, [
+
+
+
+
+
       CURLOPT_PORT => "3020",
       CURLOPT_URL => "http://51.222.14.197:3020/lead",
       CURLOPT_RETURNTRANSFER => true,
