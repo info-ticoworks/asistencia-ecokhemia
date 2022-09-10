@@ -61,14 +61,14 @@ try {
 
 
 
-        $n = "SELECT COUNT(*) as contar from Perfiles where Cedula = '$cedula'";
-        $consultaN = mysqli_query($conexion, $n);
-        $colaborador = mysqli_fetch_array($consultaN);
-        if ($colaborador['contar'] = 1) {
-            echo $cedula;
-            $_SESSION['Nombre'] = $nombre;
-            echo $nombre; 
-        }
+        //$n = "SELECT COUNT(*) as contar from Perfiles where Cedula = '$cedula'";
+        //$consultaN = mysqli_query($conexion, $n);
+        //$colaborador = mysqli_fetch_array($consultaN);
+        //if ($colaborador['contar'] = 1) {
+        //    echo $cedula;
+        //    $_SESSION['Nombre'] = $nombre;
+        //    echo $nombre; 
+        //}
 
 
         $sql ="SELECT Nombre FROM Perfiles WHERE cedula LIKE '$cedula'";
