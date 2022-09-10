@@ -54,10 +54,20 @@ try {
         $cedula = ($_POST['ced']);
         $date = date("y-m-d");
         $ubicacion = $_POST['Ub'];
-        $queryNombre = "SELECT Nombre from Perfiles where Cedula = '$cedula'";
-        $consNombre = mysqli_query($conexion, $queryNombre);
-        echo $queryNombre;
-        echo $consNombre;
+        //$queryNombre = "SELECT Nombre from Perfiles where Cedula = '$cedula'";
+        //$consNombre = mysqli_query($conexion, $queryNombre);
+        //echo $queryNombre;
+        //echo $consNombre;
+
+
+
+        $q = "SELECT COUNT(*) as contar from Perfiles where Cedula = '$cedula'";
+        $consulta = mysqli_query($conexion, $q);
+        $array = mysqli_fetch_array($consulta);
+        if ($array['contar'] = 1) {
+            $_SESSION['Nombre'] = $nombre;
+        }
+        echo $nombre;
 
 
 
