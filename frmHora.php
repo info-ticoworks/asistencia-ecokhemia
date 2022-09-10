@@ -54,6 +54,12 @@ try {
         $cedula = ($_POST['ced']);
         $date = date("y-m-d");
         $ubicacion = $_POST['Ub'];
+
+        $queryNombre = "SELECT Nombre from Fechaperfil where Cedula = '$cedula'";
+        $consNombre = mysqli_query($conexion, $queryNombre);
+        $nombre = mysqli_fetch_array($consNombre);
+
+
         $q = "SELECT COUNT(*) as contar from Fechaperfil where Cedula = '$cedula' AND Fecha = '$date'";
         $consulta = mysqli_query($conexion, $q);
         $array = mysqli_fetch_array($consulta);
@@ -66,8 +72,6 @@ try {
         if ($listR == "Ingreso") {
                 date_default_timezone_set('America/Costa_Rica');
                 $time = date("H:i");
-                $consNombre = "SELECT nombre from Fechaperfil where Cedula = '$cedula'";
-                $nombre = mysqli_query($conexion, $consNombre);
                 $cons = "SELECT COUNT(HoraIngreso) as contar from Fechaperfil where Cedula = '$cedula' AND Fecha = '$date'";
                 $consulta = mysqli_query($conexion, $cons);
                 $array = mysqli_fetch_array($consulta);
