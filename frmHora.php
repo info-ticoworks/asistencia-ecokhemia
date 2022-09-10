@@ -66,8 +66,8 @@ try {
         $colaborador = mysqli_fetch_array($consultaN);
         if ($colaborador['contar'] = 1) {
             echo $cedula;
-            $_SESSION['contar'] = $nombre;
-            echo $nombre; 
+            $_SESSION['Nombre'] = $nombre;
+            echo $nombre;
         }
 
 
