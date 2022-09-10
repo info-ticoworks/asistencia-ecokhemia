@@ -66,6 +66,8 @@ try {
         if ($listR == "Ingreso") {
                 date_default_timezone_set('America/Costa_Rica');
                 $time = date("H:i");
+                $consNombre = "SELECT nombre from Fechaperfil where Cedula = '$cedula'";
+                $nombre = mysqli_query($conexion, $consNombre);
                 $cons = "SELECT COUNT(HoraIngreso) as contar from Fechaperfil where Cedula = '$cedula' AND Fecha = '$date'";
                 $consulta = mysqli_query($conexion, $cons);
                 $array = mysqli_fetch_array($consulta);
@@ -74,8 +76,8 @@ try {
                 $FechaPerfil->setDate($date);
                 $FechaPerfil->setUser($cedula);
                 echo '<p>' . $FechaPerfil->insertarHoraIngreso(). '</p>';
-                //$Noti->enviarNoti();
-                
+
+                //inicio de envío de notificación por WhatsApp
                 $curl = curl_init();
                     curl_setopt_array($curl, [
                         CURLOPT_PORT => "3020",
@@ -86,7 +88,7 @@ try {
                         CURLOPT_TIMEOUT => 30,
                         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
                         CURLOPT_CUSTOMREQUEST => "POST",
-                        CURLOPT_POSTFIELDS => "{\n  \"message\":\"El colaborador cédula $cedula ha registrado su inicio de labores desde la ubicación: $ubicacion\",\n  \"phone\":\"50683528129\"\n}",
+                        CURLOPT_POSTFIELDS => "{\n  \"message\":\"El colaborador $nombre, con la cédula $cedula ha registrado su inicio de labores desde la ubicación: $ubicacion\",\n  \"phone\":\"50683528129\"\n}",
                         CURLOPT_HTTPHEADER => [
                         "Content-Type: application/json"
                     ],
@@ -101,7 +103,7 @@ try {
                     echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
                   }
                 echo '<script>console.log("Paso 2 Notificacion")</script>';
-                echo '<script>console.log($cedula)</script>';
+                //Final de envío de notificación por WhatsApp
 
                 echo "<script>
             Swal.fire({
