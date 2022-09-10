@@ -1,6 +1,21 @@
 <?php
 echo '<script>console.log("Carga de archivo NotiWhats")</script>';
 Class NotiWhats {
+
+  private $cedula;
+
+  public function __construct() {
+    $this->cedula = "";
+  } 
+
+  public function getCedula() {
+    return $this->cedula;
+  }
+
+  public function setCedula($cedula): void {
+    $this->cedula = $cedula;
+  }
+
   function enviarNoti() {
     echo '<script>console.log("Paso 1 - Envío de Notificación por WhatsApp")</script>';
     $curl = curl_init();
