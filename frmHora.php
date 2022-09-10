@@ -64,7 +64,6 @@ try {
             echo "-"; // un separador
             echo $fila["Nombre"];
             echo "</p>";
-            }
             }else{
             echo "<p> MySQL no conoce ese usuario y password</p>";
             }
