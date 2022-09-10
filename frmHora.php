@@ -58,7 +58,6 @@ try {
         $queryNombre = "SELECT Nombre from Perfiles where Cedula = '$cedula'";
         $consNombre = mysqli_query($conexion, $queryNombre);
         $colaborador = mysql_fetch_array($consNombre);
-        echo $colaborador;
 
 
 
