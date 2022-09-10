@@ -66,8 +66,9 @@ try {
             echo "</p>";
             }else{
             echo "<p> MySQL no conoce ese usuario y password</p>";
-            }
-            
+        };
+
+
         $q = "SELECT COUNT(*) as contar from Fechaperfil where Cedula = '$cedula' AND Fecha = '$date'";
         $consulta = mysqli_query($conexion, $q);
         $array = mysqli_fetch_array($consulta);
