@@ -43,11 +43,11 @@
 try {
     if (isset($_POST['btEnviar'])) {
         echo '<script>console.log("Paso 2")</script>';
-        require_once './config.php';
+        require './config.php';
         echo '<script>console.log("Paso 4")</script>';
-        require_once './class/FechaPerfil.php';
+        require './class/FechaPerfil.php';
         echo '<script>console.log("Paso 5")</script>';
-        require_once './noti_ingreso.php';
+        require './noti_ingreso.php';
         $FechaPerfil = new FechaPerfil();
         $Noti = new NotiWhats();
         $listR = $_POST["lista"];
@@ -61,19 +61,19 @@ try {
 
 
 
-        //$n = "SELECT COUNT(*) as contar from Perfiles where Cedula = '$cedula'";
-        //$consultaN = mysqli_query($conexion, $n);
-        //$colaborador = mysqli_fetch_array($consultaN);
-        //if ($colaborador['contar'] = 1) {
-        //    echo $cedula;
-        //    $_SESSION['Nombre'] = $nombre;
-        //    echo $nombre; 
+        $n = "SELECT COUNT(*) as contar from Perfiles where Cedula = '$cedula'";
+        $consultaN = mysqli_query($conexion, $n);
+        $colaborador = mysqli_fetch_array($consultaN);
+        if ($colaborador['contar'] = 1) {
+            echo $cedula;
+            $_SESSION['Nombre'] = $nombre;
+            echo $nombre; 
         //}
 
 
         $sql ="SELECT * FROM Perfiles WHERE Cedula = '$cedula'";
-        $result = mysqli_query($sql);
-        while ($fila=mysqli_fetch_array($result)) {
+        $result = mysqli_query($sql) or die("Error en la Consulta SQL".mysqli_last_error());
+        while ($fila = mysqli_fetch_array($result)) {
         $revisado= $fila['Nombre'];
         }
         echo $revisado;
