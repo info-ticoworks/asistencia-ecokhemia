@@ -72,11 +72,10 @@ try {
 
 
         $sql ="SELECT Nombre FROM Perfiles WHERE cedula LIKE '$cedula'";
-        $result = pg_query($sql) or die("Error en la Consulta SQL".pg_last_error());
-        while ($fila=pg_fetch_array($result)) {
+        $result = mysqli_query($sql);
+        while ($fila=mysqli_fetch_array($result)) {
         $revisado= $fila['Nombre'];
         }
- 
         echo $revisado;
 
 
