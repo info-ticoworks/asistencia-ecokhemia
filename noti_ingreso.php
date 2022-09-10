@@ -44,7 +44,7 @@ Class NotiWhats {
 
     } catch (Exception $e) {
       log_exception($e);
-      echo '<script>console.log("'{$e}'")</script>';
+      echo '<script>console.log("Error de capa 8")</script>';
   }
 
 }
