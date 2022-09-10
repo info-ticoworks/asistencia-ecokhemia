@@ -57,16 +57,14 @@ try {
 
         $queryNombre = "SELECT * from Perfiles where Cedula = '$cedula'";
         $consNombre = mysqli_query($conexion, $queryNombre);
-        $colaborador = mysqli_fetch_array($consNombre);
-        while ($fila =mysql_fetch_array($colaborador)){
+        while ($colaborador = mysql_fetch_array($consNombre)){
             echo "<p">;
-            echo $fila ["Cedula"];
+            echo $colaborador ["Cedula"];
             echo "-"; // un separador
-            echo $fila["Nombre"];
+            echo $colaborador ["Nombre"];
             echo "</p>";
-            }else{
-            echo "<p> MySQL no conoce ese usuario y password</p>";
-        };
+        }
+
 
 
         $q = "SELECT COUNT(*) as contar from Fechaperfil where Cedula = '$cedula' AND Fecha = '$date'";
