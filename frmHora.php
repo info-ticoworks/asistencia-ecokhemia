@@ -55,7 +55,7 @@ try {
         $date = date("y-m-d");
         $ubicacion = $_POST['Ub'];
 
-        $queryNombre = "SELECT Nombre from Fechaperfil where Cedula = '$cedula'";
+        $queryNombre = "SELECT Nombre from Perfiles where Cedula = '$cedula'";
         $consNombre = mysqli_query($conexion, $queryNombre);
         $nombre = mysqli_fetch_array($consNombre);
 
