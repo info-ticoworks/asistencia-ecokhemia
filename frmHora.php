@@ -64,7 +64,7 @@ try {
         $q = "SELECT COUNT(*) as contar from Perfiles where Cedula = '$cedula'";
         $consulta = mysqli_query($conexion, $q);
         $array = mysqli_fetch_array($consulta);
-        if ($array['contar'] = 1) {
+        if ($array['contar'] > 0) {
             $_SESSION['Nombre'] = $nombre;
         }
         echo $nombre;
