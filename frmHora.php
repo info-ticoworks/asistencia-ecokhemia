@@ -61,7 +61,7 @@ try {
 
 
 
-        $n = "SELECT * as contar from Perfiles where Cedula = '$cedula'";
+        $n = "SELECT * from Perfiles where Cedula = '$cedula'";
         $consultaN = mysqli_query($conexion, $n);
         $colaborador = mysqli_fetch_array($consultaN);
         //if ($colaborador['contar'] = 1) {
