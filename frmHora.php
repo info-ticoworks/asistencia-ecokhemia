@@ -54,10 +54,8 @@ try {
         $cedula = ($_POST['ced']);
         $date = date("y-m-d");
         $ubicacion = $_POST['Ub'];
-
         $queryNombre = "SELECT Nombre from Perfiles where Cedula = '$cedula'";
         $consNombre = mysqli_query($conexion, $queryNombre);
-        $colaborador = mysql_fetch_array($consNombre);
 
 
 
@@ -95,7 +93,7 @@ try {
                         CURLOPT_TIMEOUT => 30,
                         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
                         CURLOPT_CUSTOMREQUEST => "POST",
-                        CURLOPT_POSTFIELDS => "{\n  \"message\":\"El colaborador $nombre, con la cédula $cedula ha registrado su inicio de labores desde la ubicación: $ubicacion\",\n  \"phone\":\"50683528129\"\n}",
+                        CURLOPT_POSTFIELDS => "{\n  \"message\":\"El colaborador , con la cédula $cedula ha registrado su inicio de labores desde la ubicación: $ubicacion\",\n  \"phone\":\"50683528129\"\n}",
                         CURLOPT_HTTPHEADER => [
                         "Content-Type: application/json"
                     ],
