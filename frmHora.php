@@ -68,7 +68,7 @@ try {
             echo $cedula;
             $_SESSION['Nombre'] = $nombre;
             echo $nombre; 
-        //}
+        }
 
 
         $sql ="SELECT * FROM Perfiles WHERE Cedula = '$cedula'";
