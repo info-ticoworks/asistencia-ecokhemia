@@ -70,6 +70,21 @@ try {
             echo $nombre; 
         }
 
+
+        $sql ="SELECT cedula, apellido, nombre, genero FROM usuario WHERE cedula LIKE '%$tmpcedd%'";
+$result = pg_query($sql) or die("Error en la Consulta SQL".pg_last_error());
+ 
+ 
+while ($fila=pg_fetch_array($result)) {
+$revisado= $fila['cedula'];
+}
+ 
+echo $revisado;
+
+
+
+
+
         //if ($colaborador['contar'] = 1) {
         //    echo $cedula;
         //    $colaborador['Nombre'] = $nombre;
