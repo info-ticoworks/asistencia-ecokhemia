@@ -61,14 +61,14 @@ try {
 
 
 
-        $n = "SELECT COUNT(*) as contar from Perfiles where Cedula = '$cedula'";
+        $n = "SELECT * as contar from Perfiles where Cedula = '$cedula'";
         $consultaN = mysqli_query($conexion, $n);
         $colaborador = mysqli_fetch_array($consultaN);
-        if ($colaborador['contar'] = 1) {
-            echo $cedula;
-            $colaborador['Nombre'] = $nombre;
-        }
-        echo $nombre;
+        //if ($colaborador['contar'] = 1) {
+        //    echo $cedula;
+        //    $colaborador['Nombre'] = $nombre;
+        //}
+        echo $colaborador;
     
 
 
