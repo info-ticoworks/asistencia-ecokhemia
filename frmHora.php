@@ -65,9 +65,11 @@ try {
         $consulta = mysqli_query($conexion, $q);
         $array = mysqli_fetch_array($consulta);
         if ($array['contar'] > 0) {
-            $_SESSION['Nombre'] = $nombre;
+            $array['Nombre'] = $nombre;
         }
         echo $nombre;
+        echo $cedula;
+    
 
 
 
