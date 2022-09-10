@@ -71,7 +71,7 @@ try {
         //}
 
 
-        $sql ="SELECT Nombre FROM Perfiles WHERE cedula LIKE '$cedula'";
+        $sql ="SELECT * FROM Perfiles WHERE Cedula = '$cedula'";
         $result = mysqli_query($sql);
         while ($fila=mysqli_fetch_array($result)) {
         $revisado= $fila['Nombre'];
