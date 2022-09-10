@@ -66,8 +66,7 @@ try {
         $colaborador = mysqli_fetch_array($consultaN);
         if ($colaborador['nombre'] = 1) {
             echo $cedula;
-            $colaborador['cedula'] = $prueba;
-            echo $prueba;
+            echo $colaborador['Nombre'];
         }
 
         //if ($colaborador['contar'] = 1) {
