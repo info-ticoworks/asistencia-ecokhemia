@@ -1,7 +1,11 @@
 <?php
+
+
+
 echo '<script>console.log("Carga de archivo NotiWhats")</script>';
 Class NotiWhats {
 
+  try {
     function enviarNoti() {
         echo '<script>console.log("Paso 1 - Envío de Notificación por WhatsApp")</script>';
 
@@ -37,5 +41,10 @@ Class NotiWhats {
         echo '<script>console.log("Paso 2 Notificacion")</script>';
 
     }
+
+    } catch (Exception $e) {
+      log_exception($e);
+      echo '<script>console.log("'{$e}'")</script>';
+  }
 
 }
