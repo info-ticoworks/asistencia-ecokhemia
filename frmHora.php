@@ -65,7 +65,7 @@ try {
         $consultaN = mysqli_query($conexion, $n);
         $colaborador = mysqli_fetch_array($consultaN);
         if ($colaborador['contar'] = 1) {
-            //echo "Hola";
+            echo $cedula;
             $_SESSION['cedula'] = $prueba;
             echo $prueba;
         }
