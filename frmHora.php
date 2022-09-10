@@ -69,6 +69,7 @@ try {
         //    $colaborador['Nombre'] = $nombre;
         //}
         echo $colaborador;
+        echo $consultaN;
     
 
 
