@@ -55,11 +55,20 @@ try {
         $date = date("y-m-d");
         $ubicacion = $_POST['Ub'];
 
-        $queryNombre = "SELECT Nombre from Perfiles where Cedula = '$cedula'";
-        $nombre = mysqli_query($conexion, $queryNombre);
-        //$nombre = mysqli_fetch_array($consNombre);
-
-
+        $queryNombre = "SELECT * from Perfiles where Cedula = '$cedula'";
+        $consNombre = mysqli_query($conexion, $queryNombre);
+        $colaborador = mysqli_fetch_array($consNombre);
+        while ($fila =mysql_fetch_array($colaborador)){
+            echo "<p">;
+            echo $fila ["Cedula"];
+            echo "-"; // un separador
+            echo $fila["Nombre"];
+            echo "</p>";
+            }
+            }else{
+            echo "<p> MySQL no conoce ese usuario y password</p>";
+            }
+            
         $q = "SELECT COUNT(*) as contar from Fechaperfil where Cedula = '$cedula' AND Fecha = '$date'";
         $consulta = mysqli_query($conexion, $q);
         $array = mysqli_fetch_array($consulta);
