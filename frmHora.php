@@ -56,6 +56,7 @@ try {
         $ubicacion = $_POST['Ub'];
         $queryNombre = "SELECT Nombre from Perfiles where Cedula = '$cedula'";
         $consNombre = mysqli_query($conexion, $queryNombre);
+        echo $queryNombre;
 
 
 
