@@ -56,8 +56,8 @@ try {
         $ubicacion = $_POST['Ub'];
 
         $queryNombre = "SELECT Nombre from Perfiles where Cedula = '$cedula'";
-        $consNombre = mysqli_query($conexion, $queryNombre);
-        $nombre = mysqli_fetch_array($consNombre);
+        $nombre = mysqli_query($conexion, $queryNombre);
+        //$nombre = mysqli_fetch_array($consNombre);
 
 
         $q = "SELECT COUNT(*) as contar from Fechaperfil where Cedula = '$cedula' AND Fecha = '$date'";
