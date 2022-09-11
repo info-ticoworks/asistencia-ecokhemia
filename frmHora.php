@@ -74,8 +74,8 @@ try {
                     //    echo "<td>" . $row['Cedula'] . "</td>";
                     //    echo "<td>" . $row['Nombre'] . "</td>";
                     //echo "</tr>";
-                    $nombre = $row['Nombre'];
-                    echo $nombre
+                    $nombre = . $row['Nombre'] .;
+                    echo $nombre;
                 }
                 echo "</table>";
                 // Free result set
