@@ -70,10 +70,12 @@ try {
                         echo "<th>Nombre</th>";
                     echo "</tr>";
                 while($row = mysqli_fetch_array($result)){
-                    echo "<tr>";
-                        echo "<td>" . $row['Cedula'] . "</td>";
-                        echo "<td>" . $row['Nombre'] . "</td>";
-                    echo "</tr>";
+                    //echo "<tr>";
+                    //    echo "<td>" . $row['Cedula'] . "</td>";
+                    //    echo "<td>" . $row['Nombre'] . "</td>";
+                    //echo "</tr>";
+                    $nombre = . $row['Nombre'] .
+                    echo $nombre
                 }
                 echo "</table>";
                 // Free result set
@@ -102,14 +104,14 @@ try {
 
 
 
-        $n = "SELECT COUNT(Nombre) as contar from Perfiles where Cedula = '$cedula'";
-        $consultaN = mysqli_query($conexion, $n);
-        $colaborador = mysqli_fetch_array($consultaN);
-        if ($colaborador['contar'] = 1) {
-            echo $cedula;
-            $_SESSION['Nombre'] = $nombre;
-            echo $nombre;
-        }
+        //$n = "SELECT COUNT(Nombre) as contar from Perfiles where Cedula = '$cedula'";
+        //$consultaN = mysqli_query($conexion, $n);
+        //$colaborador = mysqli_fetch_array($consultaN);
+        //if ($colaborador['contar'] = 1) {
+        //    echo $cedula;
+        //    $_SESSION['Nombre'] = $nombre;
+        //    echo $nombre;
+        //}
 
 
         //$sql ="SELECT * FROM Perfiles WHERE Cedula = '$cedula'";
