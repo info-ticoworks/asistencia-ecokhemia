@@ -40,6 +40,8 @@
     </form>
     <?php
 
+    Public $nombre;
+
 try {
     if (isset($_POST['btEnviar'])) {
         echo '<script>console.log("Paso 2")</script>';
@@ -74,7 +76,7 @@ try {
                     //    echo "<td>" . $row['Cedula'] . "</td>";
                     //    echo "<td>" . $row['Nombre'] . "</td>";
                     //echo "</tr>";
-                    Public $nombre = $row['Nombre'];
+                    $nombre = $row['Nombre'];
                     echo $nombre;
                 }
                 echo "</table>";

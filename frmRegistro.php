@@ -22,6 +22,7 @@
             <input type="submit" value="Registrar" name="btverificarc" id="btverificarc">
             <p><a class="" href="./index.php">Volver atras</a></p>
       <?php
+
                 try {
                     echo "<script>
                         Swal.fire({
