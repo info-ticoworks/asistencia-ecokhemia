@@ -64,17 +64,17 @@ try {
         $sql = "SELECT * FROM Perfiles where Cedula = $cedula";
         if($result = mysqli_query($conexion, $sql)){
             if(mysqli_num_rows($result) > 0){
-                echo "<table>";
-                    echo "<tr>";
-                        echo "<th>Cedula</th>";
-                        echo "<th>Nombre</th>";
-                    echo "</tr>";
+                //echo "<table>";
+                    //echo "<tr>";
+                        //echo "<th>Cedula</th>";
+                        //echo "<th>Nombre</th>";
+                    //echo "</tr>";
                 while($row = mysqli_fetch_array($result)){
                     //echo "<tr>";
                     //    echo "<td>" . $row['Cedula'] . "</td>";
                     //    echo "<td>" . $row['Nombre'] . "</td>";
                     //echo "</tr>";
-                    $nombre = $row['Nombre'];
+                    Public $nombre = $row['Nombre'];
                     echo $nombre;
                 }
                 echo "</table>";
