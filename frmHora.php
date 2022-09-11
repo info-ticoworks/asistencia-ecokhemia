@@ -40,7 +40,7 @@
     </form>
     <?php
 
-    Public $nombre;
+
 
 try {
     if (isset($_POST['btEnviar'])) {
