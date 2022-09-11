@@ -61,7 +61,7 @@ try {
 
 
 
-        $sql = "SELECT * FROM Perfiles";
+        $sql = "SELECT * FROM Perfiles where Cedula = $cedula";
         if($result = mysqli_query($conexion, $sql)){
             if(mysqli_num_rows($result) > 0){
                 echo "<table>";
