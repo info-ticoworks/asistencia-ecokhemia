@@ -64,50 +64,50 @@ try {
 
 
 
-        //$sql = "SELECT * FROM Perfiles where Cedula = $cedula";
-        //if($result = mysqli_query($conexion, $sql)){
-        //    if(mysqli_num_rows($result) > 0){
+        $sql = "SELECT * FROM Perfiles where Cedula = $cedula";
+        if($result = mysqli_query($conexion, $sql)){
+            if(mysqli_num_rows($result) > 0){
                 //echo "<table>";
                     //echo "<tr>";
                         //echo "<th>Cedula</th>";
                         //echo "<th>Nombre</th>";
                     //echo "</tr>";
-        //        while($row = mysqli_fetch_array($result)){
+                while($row = mysqli_fetch_array($result)){
                     //echo "<tr>";
                     //    echo "<td>" . $row['Cedula'] . "</td>";
                     //    echo "<td>" . $row['Nombre'] . "</td>";
                     //echo "</tr>";
-        //            $nombre = $row['Nombre'];
-        //            echo $nombre;
-        //        }
-        //        echo "</table>";
+                    $nombre = $row['Nombre'];
+                    echo $nombre;
+                }
+                echo "</table>";
                 // Free result set
-        //        mysqli_free_result($result);
-        //    } else{
-        //        echo "No records matching your query were found.";
-        //    }
-        //} else{
-        //    echo "ERROR: Could not able to execute $sql. " . mysqli_error($conexion);
+                mysqli_free_result($result);
+            } else{
+                echo "No records matching your query were found.";
+            }
+        } else{
+            echo "ERROR: Could not able to execute $sql. " . mysqli_error($conexion);
+        }
+
+
+
+        //$n = "SELECT COUNT(Nombre) as contar from Perfiles where Cedula = '$cedula'";
+        //$consultaN = mysqli_query($conexion, $n);
+        //$colaborador = mysqli_fetch_array($consultaN);
+        //if ($colaborador['contar'] = 1) {
+        //    echo $cedula;
+        //    $_SESSION['Nombre'] = $nombre;
+        //    echo $nombre;
         //}
 
 
-
-        $n = "SELECT COUNT(Nombre) as contar from Perfiles where Cedula = '$cedula'";
-        $consultaN = mysqli_query($conexion, $n);
-        $colaborador = mysqli_fetch_array($consultaN);
-        if ($colaborador['contar'] = 1) {
-            echo $cedula;
-            $_SESSION['Nombre'] = $nombre;
-            echo $nombre;
-        }
-
-
-        $sql ="SELECT * FROM Perfiles WHERE Cedula = '$cedula'";
-        $result = mysqli_query($sql) or die("Error en la Consulta SQL".mysqli_last_error());
-        while ($fila = mysqli_fetch_array($result)) {
-        $revisado= $fila['Nombre'];
-        }
-        echo $revisado;
+        //$sql ="SELECT * FROM Perfiles WHERE Cedula = '$cedula'";
+        //$result = mysqli_query($sql) or die("Error en la Consulta SQL".mysqli_last_error());
+        //while ($fila = mysqli_fetch_array($result)) {
+        //$revisado= $fila['Nombre'];
+        //}
+        //echo $revisado;
 
 
 
