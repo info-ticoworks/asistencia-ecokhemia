@@ -57,13 +57,8 @@ try {
         $date = date("y-m-d");
         $ubicacion = $_POST['Ub'];
         $nombre = "";
-        //$queryNombre = "SELECT Nombre from Perfiles where Cedula = '$cedula'";
-        //$consNombre = mysqli_query($conexion, $queryNombre);
-        //echo $queryNombre;
-        //echo $consNombre;
 
-
-
+        //Inicio de notificación por WhatsApp
         $sql = "SELECT * FROM Perfiles where Cedula = $cedula";
         if($result = mysqli_query($conexion, $sql)){
             if(mysqli_num_rows($result) > 0){
@@ -78,7 +73,7 @@ try {
                     //    echo "<td>" . $row['Nombre'] . "</td>";
                     //echo "</tr>";
                     $nombre = $row['Nombre'];
-                    echo $nombre;
+                    //echo $nombre;
                 }
                 echo "</table>";
                 // Free result set
@@ -89,38 +84,7 @@ try {
         } else{
             echo "ERROR: Could not able to execute $sql. " . mysqli_error($conexion);
         }
-
-
-
-        //$n = "SELECT COUNT(Nombre) as contar from Perfiles where Cedula = '$cedula'";
-        //$consultaN = mysqli_query($conexion, $n);
-        //$colaborador = mysqli_fetch_array($consultaN);
-        //if ($colaborador['contar'] = 1) {
-        //    echo $cedula;
-        //    $_SESSION['Nombre'] = $nombre;
-        //    echo $nombre;
-        //}
-
-
-        //$sql ="SELECT * FROM Perfiles WHERE Cedula = '$cedula'";
-        //$result = mysqli_query($sql) or die("Error en la Consulta SQL".mysqli_last_error());
-        //while ($fila = mysqli_fetch_array($result)) {
-        //$revisado= $fila['Nombre'];
-        //}
-        //echo $revisado;
-
-
-
-        //if ($colaborador['contar'] = 1) {
-        //    echo $cedula;
-        //    $colaborador['Nombre'] = $nombre;
-        //}
-
-    
-
-
-
-
+        //Final de notificación por WhatsApp
 
         $q = "SELECT COUNT(*) as contar from Fechaperfil where Cedula = '$cedula' AND Fecha = '$date'";
         $consulta = mysqli_query($conexion, $q);
