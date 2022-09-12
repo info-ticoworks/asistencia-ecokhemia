@@ -92,39 +92,22 @@ try {
 
 
 
+        $n = "SELECT COUNT(Nombre) as contar from Perfiles where Cedula = '$cedula'";
+        $consultaN = mysqli_query($conexion, $n);
+        $colaborador = mysqli_fetch_array($consultaN);
+        if ($colaborador['contar'] = 1) {
+            echo $cedula;
+            $_SESSION['Nombre'] = $nombre;
+            echo $nombre;
+        }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //$n = "SELECT COUNT(Nombre) as contar from Perfiles where Cedula = '$cedula'";
-        //$consultaN = mysqli_query($conexion, $n);
-        //$colaborador = mysqli_fetch_array($consultaN);
-        //if ($colaborador['contar'] = 1) {
-        //    echo $cedula;
-        //    $_SESSION['Nombre'] = $nombre;
-        //    echo $nombre;
-        //}
-
-
-        //$sql ="SELECT * FROM Perfiles WHERE Cedula = '$cedula'";
-        //$result = mysqli_query($sql) or die("Error en la Consulta SQL".mysqli_last_error());
-        //while ($fila = mysqli_fetch_array($result)) {
-        //$revisado= $fila['Nombre'];
-        //}
-        //echo $revisado;
-
-
+        $sql ="SELECT * FROM Perfiles WHERE Cedula = '$cedula'";
+        $result = mysqli_query($sql) or die("Error en la Consulta SQL".mysqli_last_error());
+        while ($fila = mysqli_fetch_array($result)) {
+        $revisado= $fila['Nombre'];
+        }
+        echo $revisado;
 
 
 
