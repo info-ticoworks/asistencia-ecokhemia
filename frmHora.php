@@ -73,7 +73,9 @@ try {
                     //    echo "<td>" . $row['Nombre'] . "</td>";
                     //echo "</tr>";
                     $nombre = $row['Nombre'];
-                    //echo $nombre;
+                    echo $cedula;
+                    echo $nombre;
+                    echo $ubicacion;
                 }
                 echo "</table>";
                 // Free result set
