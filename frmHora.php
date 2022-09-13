@@ -20,6 +20,8 @@
            {
                var posicion = p.coords.latitude+','+p.coords.longitude;
                document.getElementById("Ub").value = posicion;
+               console.log ("Latitud: " + p.coords.latitude);
+               console.log ("Longitud: " + p.coords.longitude);
                $latitude = p.coords.latitude;
                $longitude = p.coords.longitude;
 
