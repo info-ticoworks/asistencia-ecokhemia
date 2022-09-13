@@ -82,8 +82,8 @@
             $longitude = $_POST['longitud'];
             $nombre = "";
             // coordinates
-            //echo 'Latitud: ' . $latitude;
-            //echo 'Longitud: ' . $longitude;
+            echo 'Latitud: ' . $latitude;
+            echo 'Longitud: ' . $longitude;
             $result = getAddress($latitude, $longitude);
             echo 'Address: ' . $result;
 
