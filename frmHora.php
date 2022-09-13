@@ -96,7 +96,7 @@
                 Swal.fire({
                 icon: 'error',
                 title: 'Oops...!',
-                text: 'El espacio de la cédula no puede estar vacío!',  
+                text: 'Debe completar el formulario!',  
                 })
                 </script>";
 
