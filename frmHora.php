@@ -73,6 +73,8 @@
             $ubicacion = $_POST['Ub'];
             $nombre = "";
             // coordinates
+            echo 'Latitud: ' . $latitude;
+            echo 'Longitud: ' . $longitude;
             $result = getAddress($latitude, $longitude);
             echo 'Address: ' . $result;
 
