@@ -83,10 +83,10 @@
             $longitude = $_POST['longitud'];
             $nombre = "";
             // coordinates
-            echo 'Latitud: ' . $latitude;
-            echo 'Longitud: ' . $longitude;
-            $result = getAddress($latitude, $longitude);
-            echo 'Address: ' . $result;
+            //echo 'Latitud: ' . $latitude;
+            //echo 'Longitud: ' . $longitude;
+            //$result = getAddress($latitude, $longitude);
+            //echo 'Address: ' . $result;
 
 // produces output
 // Address: 58 Brooklyn Ave, Brooklyn, NY 11216, USA
