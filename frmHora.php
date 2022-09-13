@@ -65,33 +65,7 @@ try {
         $ubicacion = $_POST['Ub'];
         $nombre = "";
 
-        function getGeocodeData($ubicacion) {
-            $address = urlencode($ubicacion);
-            $googleMapUrl = "https://maps.googleapis.com/maps/api/geocode/json?address={$ubicacion}&key=AIzaSyD2uzWiIgPtw5ImJnrDkxA2kT1Pfcg0Ipk";
-            $geocodeResponseData = file_get_contents($googleMapUrl);
-            $responseData = json_decode($geocodeResponseData, true);
-            if($responseData['status']=='OK') {
-            $latitude = isset($responseData['results'][0]['geometry']['location']['lat']) ? $responseData['results'][0]['geometry']['location']['lat'] : "";
-            $longitude = isset($responseData['results'][0]['geometry']['location']['lng']) ? $responseData['results'][0]['geometry']['location']['lng'] : "";
-            $formattedAddress = isset($responseData['results'][0]['formatted_address']) ? $responseData['results'][0]['formatted_address'] : "";
-            if($latitude && $longitude && $formattedAddress) {
-            $geocodeData = array();
-            array_push(
-            $geocodeData,
-            $latitude,
-            $longitude,
-            $formattedAddress
-            echo $googleMapUrl;
-            );
-            return $geocodeData;
-            } else {
-            return false;
-            }
-            } else {
-            echo "ERROR: {$responseData['status']}";
-            return false;
-            }
-        }
+
 
         //Inicio de notificación por WhatsApp
         $sql = "SELECT * FROM Perfiles where Cedula = $cedula";
