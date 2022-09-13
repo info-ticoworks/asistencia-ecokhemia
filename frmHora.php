@@ -335,15 +335,18 @@
                         }
                     }
                     
-
-
-
-
-
-
-
-                } else{
-                                            echo "<script>
+                } else {
+                    if(empty($_POST['ced']) || $listR == ""){
+                    echo "<script>
+                    Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...!',
+                    text: 'El espacio para la cúedula no puede estar vacío..!',  
+                    })
+                    </script>";    
+                    }
+                } else {
+                echo "<script>
                 Swal.fire({
                 icon: 'error',
                 title: 'Lo sentimos!',
