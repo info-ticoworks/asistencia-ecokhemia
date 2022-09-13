@@ -19,12 +19,11 @@
            function mostrar_ubicacion(p)
            {
                var posicion = p.coords.latitude+','+p.coords.longitude;
+               var latitud = p.coords.latitude;
+               var longitud = p.coords.longitude;
                document.getElementById("Ub").value = posicion;
-               console.log ("Latitud: " + p.coords.latitude);
-               console.log ("Longitud: " + p.coords.longitude);
-               $latitude = p.coords.latitude;
-               $longitude = p.coords.longitude;
-
+               document.getElementById("latitud").value = latitud;
+               document.getElementById("longitud").value = longitud;
            }
         </script>
 
@@ -44,6 +43,8 @@
             <input type="submit" value="Enviar" name="btEnviar" id="btEnviar">
             <p>¿Ya has registrado la hora? <a class="" href="./">Volver atras</a></p>
             <input type="hidden" id="Ub" name="Ub" readonly>
+            <input type="hidden" id="latitud" name="latitud" readonly>
+            <input type="hidden" id="longitud" name="longitud" readonly>
         </form>
     <?php
 
@@ -73,6 +74,8 @@
             $cedula = ($_POST['ced']);
             $date = date("y-m-d");
             $ubicacion = $_POST['Ub'];
+            $latitude = $_POST['latitud'];
+            $longitude = $_POST['longitud'];
             $nombre = "";
             // coordinates
             echo 'Latitud: ' . $latitude;
