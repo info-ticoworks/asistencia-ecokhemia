@@ -52,7 +52,7 @@
     {
         try {
                 //google map api url
-                $url = "http://maps.google.com/maps/api/geocode/json?latlng=$latitude,$longitude&key=AIzaSyD2uzWiIgPtw5ImJnrDkxA2kT1Pfcg0Ipk";
+                $url = "https://maps.google.com/maps/api/geocode/json?latlng=$latitude,$longitude&key=AIzaSyD2uzWiIgPtw5ImJnrDkxA2kT1Pfcg0Ipk";
 
                 // send http request
                 $geocode = file_get_contents($url);
@@ -61,6 +61,7 @@
                 return $address;
             } catch (Exception $e) {
                 log_exception($e);
+                echo 'Excepción capturada: ',  $e->getMessage(), "\n";
         }
     }
 
