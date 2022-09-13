@@ -88,9 +88,19 @@
             //$result = getAddress($latitude, $longitude);
             //echo 'Address: ' . $result;
 
-// produces output
-// Address: 58 Brooklyn Ave, Brooklyn, NY 11216, USA
+                // produces output
+                // Address: 58 Brooklyn Ave, Brooklyn, NY 11216, USA
 
+            if(empty($_POST['ced']) || $listR == ""){
+                echo "<script>
+                Swal.fire({
+                icon: 'error',
+                title: 'Oops...!',
+                text: 'El espacio de la cédula no puede estar vacío!',  
+                })
+                </script>";
+
+            }else{
             //Inicio de consulta de usuario
             $sql = "SELECT * FROM Perfiles where Cedula = $cedula";
             if($result = mysqli_query($conexion, $sql)){
@@ -334,7 +344,7 @@
                         }
                         }
                     }
-                    
+     
                 } else {
                 echo "<script>
                 Swal.fire({
@@ -352,6 +362,7 @@
 
         }
 
+    }
     } catch (Exception $e) {
         log_exception($e);
     }
