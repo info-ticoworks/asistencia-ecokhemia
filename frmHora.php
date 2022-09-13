@@ -320,21 +320,28 @@
                                 })
                                 </script>";
                                 }
-                            } 
+                            } else {
+                                if(empty($_POST['ced']) || $listR == ""){
+                                echo "<script>
+                                Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...!',
+                                text: 'Debe completar el formulario..!',  
+                                })
+                                </script>";    
+                                }
+                            }
                         }
                         }
                     }
                     
-                } else {
-                    if(empty($_POST['ced']) || $listR == ""){
-                    echo "<script>
-                    Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...!',
-                    text: 'Debe completar el formulario..!',  
-                    })
-                    </script>";    
-                    }
+
+
+
+
+
+
+
                 } else{
                                             echo "<script>
                 Swal.fire({
