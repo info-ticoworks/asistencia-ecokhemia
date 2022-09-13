@@ -242,7 +242,7 @@
                         Swal.fire({
                         icon: 'error',
                         title: 'Oops...!',
-                        text: 'Ya ha enviado la hora de ingreso..!',  
+                        text: 'Ya ha registrado la hora de ingreso de hoy $date..!',  
                         })
                         </script>";
                             }
@@ -258,7 +258,7 @@
                         Swal.fire({
                         icon: 'error',
                         title: 'Oops...!',
-                        text: 'Ya ha enviado la hora de salida..!',  
+                        text: 'Ya ha registrado su hora de salida de hoy..!',  
                         })
                         </script>";
                             } else {
