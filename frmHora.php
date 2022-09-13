@@ -82,9 +82,9 @@ try {
                     //    echo "<td>" . $row['Nombre'] . "</td>";
                     //echo "</tr>";
                     $nombre = $row['Nombre'];
-                    echo $cedula;
-                    echo $nombre;
-                    echo $ubicacion;
+                    //echo $cedula;
+                    //echo $nombre;
+                    //echo $ubicacion;
                 }
                 echo "</table>";
                 // Free result set
