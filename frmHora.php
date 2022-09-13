@@ -153,7 +153,7 @@
                             CURLOPT_TIMEOUT => 30,
                             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
                             CURLOPT_CUSTOMREQUEST => "POST",
-                            CURLOPT_POSTFIELDS => "{\n  \"message\":\"El colaborador $nombre, con la cédula $cedula ha registrado su inicio de labores desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50688925080\"\n}",
+                            CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola César! El colaborador $nombre, con la cédula $cedula ha registrado su inicio de labores desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50688925080\"\n}",
                             CURLOPT_HTTPHEADER => [
                             "Content-Type: application/json"
                         ],
@@ -181,7 +181,7 @@
                             CURLOPT_TIMEOUT => 30,
                             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
                             CURLOPT_CUSTOMREQUEST => "POST",
-                            CURLOPT_POSTFIELDS => "{\n  \"message\":\"El colaborador $nombre, con la cédula $cedula ha registrado su inicio de labores desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50670237034\"\n}",
+                            CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Josué! El colaborador $nombre, con la cédula $cedula ha registrado su inicio de labores desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50670237034\"\n}",
                             CURLOPT_HTTPHEADER => [
                             "Content-Type: application/json"
                         ],
@@ -209,7 +209,7 @@
                             CURLOPT_TIMEOUT => 30,
                             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
                             CURLOPT_CUSTOMREQUEST => "POST",
-                            CURLOPT_POSTFIELDS => "{\n  \"message\":\"El colaborador $nombre, con la cédula $cedula ha registrado su inicio de labores desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50687090676\"\n}",
+                            CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Andrea! El colaborador $nombre, con la cédula $cedula ha registrado su inicio de labores desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50687090676\"\n}",
                             CURLOPT_HTTPHEADER => [
                             "Content-Type: application/json"
                         ],
