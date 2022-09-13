@@ -52,7 +52,7 @@
     {
         try {
                 //google map api url
-                $url = "https://maps.google.com/maps/api/geocode/json?latlng=$latitude,$longitude&key=AIzaSyD2uzWiIgPtw5ImJnrDkxA2kT1Pfcg0Ipk";
+                $url = "https://maps.google.com/maps/api/geocode/json?latlng=$latitude,$longitude&key=AIzaSyBv0et_lBK9kxP1DCwAnmdfP8YH-j32JkU";
 
                 // send http request
                 $geocode = file_get_contents($url);
