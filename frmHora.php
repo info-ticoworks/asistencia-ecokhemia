@@ -189,7 +189,7 @@
                                 CURLOPT_TIMEOUT => 30,
                                 CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
                                 CURLOPT_CUSTOMREQUEST => "POST",
-                                CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Josué! El colaborador $nombre, con la cédula $cedula ha registrado su inicio de labores, sin embargo, no se registró ninguna ubicación.\",\n  \"phone\":\"50670237034\"\n}",
+                                CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Josué! El colaborador $nombre, con la cédula $cedula ha registrado su inicio de labores, sin embargo, no se registró ninguna ubicación.\",\n  \"phone\":\"50660731814\"\n}",
                                 CURLOPT_HTTPHEADER => [
                                 "Content-Type: application/json"
                             ],
@@ -390,7 +390,7 @@
                                 CURLOPT_TIMEOUT => 30,
                                 CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
                                 CURLOPT_CUSTOMREQUEST => "POST",
-                                CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Josué! El colaborador $nombre, con la cédula $cedula ha registrado su inicio de labores desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50670237034\"\n}",
+                                CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Josué! El colaborador $nombre, con la cédula $cedula ha registrado su inicio de labores desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50660731814\"\n}",
                                 CURLOPT_HTTPHEADER => [
                                 "Content-Type: application/json"
                             ],
@@ -630,7 +630,7 @@
                                     CURLOPT_TIMEOUT => 30,
                                     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
                                     CURLOPT_CUSTOMREQUEST => "POST",
-                                    CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Josué! El colaborador $nombre, con la cédula $cedula ha registrado su finalización de labores, sin embargo, no se registró ninguna ubicación.\",\n  \"phone\":\"50670237034\"\n}",
+                                    CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Josué! El colaborador $nombre, con la cédula $cedula ha registrado su finalización de labores, sin embargo, no se registró ninguna ubicación.\",\n  \"phone\":\"50660731814\"\n}",
                                     CURLOPT_HTTPHEADER => [
                                     "Content-Type: application/json"
                                 ],
@@ -831,7 +831,7 @@
                                     CURLOPT_TIMEOUT => 30,
                                     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
                                     CURLOPT_CUSTOMREQUEST => "POST",
-                                    CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Josué! El colaborador $nombre, con la cédula $cedula ha registrado su finalización de labores desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50670237034\"\n}",
+                                    CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Josué! El colaborador $nombre, con la cédula $cedula ha registrado su finalización de labores desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50660731814\"\n}",
                                     CURLOPT_HTTPHEADER => [
                                     "Content-Type: application/json"
                                 ],
@@ -1063,7 +1063,7 @@
                                         CURLOPT_TIMEOUT => 30,
                                         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
                                         CURLOPT_CUSTOMREQUEST => "POST",
-                                        CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Josué! El colaborador $nombre, con la cédula $cedula ha registrado su salida a almuerzo, sin embargo, no se registró ninguna ubicación.\",\n  \"phone\":\"50670237034\"\n}",
+                                        CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Josué! El colaborador $nombre, con la cédula $cedula ha registrado su salida a almuerzo, sin embargo, no se registró ninguna ubicación.\",\n  \"phone\":\"50660731814\"\n}",
                                         CURLOPT_HTTPHEADER => [
                                         "Content-Type: application/json"
                                     ],
@@ -1264,7 +1264,7 @@
                                         CURLOPT_TIMEOUT => 30,
                                         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
                                         CURLOPT_CUSTOMREQUEST => "POST",
-                                        CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Josué! El colaborador $nombre, con la cédula $cedula ha registrado su salida a almuerzo desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50670237034\"\n}",
+                                        CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Josué! El colaborador $nombre, con la cédula $cedula ha registrado su salida a almuerzo desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50660731814\"\n}",
                                         CURLOPT_HTTPHEADER => [
                                         "Content-Type: application/json"
                                     ],
@@ -1497,7 +1497,7 @@
                                         CURLOPT_TIMEOUT => 30,
                                         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
                                         CURLOPT_CUSTOMREQUEST => "POST",
-                                        CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Josué! El colaborador $nombre, con la cédula $cedula ha registrado su entrada después de almuerzo, sin embargo, no se registró ninguna ubicación.\",\n  \"phone\":\"50670237034\"\n}",
+                                        CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Josué! El colaborador $nombre, con la cédula $cedula ha registrado su entrada después de almuerzo, sin embargo, no se registró ninguna ubicación.\",\n  \"phone\":\"50660731814\"\n}",
                                         CURLOPT_HTTPHEADER => [
                                         "Content-Type: application/json"
                                     ],
@@ -1698,7 +1698,7 @@
                                         CURLOPT_TIMEOUT => 30,
                                         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
                                         CURLOPT_CUSTOMREQUEST => "POST",
-                                        CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Josué! El colaborador $nombre, con la cédula $cedula ha registrado su entrada después de almuerzo desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50670237034\"\n}",
+                                        CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Josué! El colaborador $nombre, con la cédula $cedula ha registrado su entrada después de almuerzo desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50660731814\"\n}",
                                         CURLOPT_HTTPHEADER => [
                                         "Content-Type: application/json"
                                     ],
