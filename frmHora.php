@@ -346,12 +346,124 @@
                         echo '<script>console.log("Paso 2 Notificacion")</script>';
                         //Final de envío de notificación por WhatsApp al Supervisor
 
+                        //inicio de envío de notificación por WhatsApp a Supervisor Leonardo
+                            $curl = curl_init();
+                            curl_setopt_array($curl, [
+                                CURLOPT_PORT => "3020",
+                                CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                                CURLOPT_RETURNTRANSFER => true,
+                                CURLOPT_ENCODING => "",
+                                CURLOPT_MAXREDIRS => 10,
+                                CURLOPT_TIMEOUT => 30,
+                                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                                CURLOPT_CUSTOMREQUEST => "POST",
+                                CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Leonardo! El colaborador $nombre, con la cédula $cedula ha registrado su inicio de labores, sin embargo, no se registró ninguna ubicación.\",\n  \"phone\":\"50663710437\"\n}",
+                                CURLOPT_HTTPHEADER => [
+                                "Content-Type: application/json"
+                            ],
+                        ]);
+                        $response = curl_exec($curl);
+                        $err = curl_error($curl);
+                        curl_close($curl);
+                        if ($err) {
+                            echo "cURL Error #:" . $err;
+                        } else {
+                            //echo $response;
+                            echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                        }
+                        echo '<script>console.log("Paso 2 Notificacion")</script>';
+                        //Final de envío de notificación por WhatsApp a Supervisor Leonardo
 
-                            }else{
+                        //inicio de envío de notificación por WhatsApp a Mario Moya
+                            $curl = curl_init();
+                            curl_setopt_array($curl, [
+                                CURLOPT_PORT => "3020",
+                                CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                                CURLOPT_RETURNTRANSFER => true,
+                                CURLOPT_ENCODING => "",
+                                CURLOPT_MAXREDIRS => 10,
+                                CURLOPT_TIMEOUT => 30,
+                                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                                CURLOPT_CUSTOMREQUEST => "POST",
+                                CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Mario! El colaborador $nombre, con la cédula $cedula ha registrado su inicio de labores, sin embargo, no se registró ninguna ubicación.\",\n  \"phone\":\"50671181265\"\n}",
+                                CURLOPT_HTTPHEADER => [
+                                "Content-Type: application/json"
+                            ],
+                        ]);
+                        $response = curl_exec($curl);
+                        $err = curl_error($curl);
+                        curl_close($curl);
+                        if ($err) {
+                            echo "cURL Error #:" . $err;
+                        } else {
+                            //echo $response;
+                            echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                        }
+                        echo '<script>console.log("Paso 2 Notificacion")</script>';
+                        //Final de envío de notificación por WhatsApp a Mario Moya
 
-                            //Notificaciones con Ubicación
+                        //inicio de envío de notificación por WhatsApp a Elizabeth de BMW
+                            $curl = curl_init();
+                            curl_setopt_array($curl, [
+                                CURLOPT_PORT => "3020",
+                                CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                                CURLOPT_RETURNTRANSFER => true,
+                                CURLOPT_ENCODING => "",
+                                CURLOPT_MAXREDIRS => 10,
+                                CURLOPT_TIMEOUT => 30,
+                                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                                CURLOPT_CUSTOMREQUEST => "POST",
+                                CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Elizabeth! El colaborador $nombre, con la cédula $cedula ha registrado su inicio de labores, sin embargo, no se registró ninguna ubicación.\",\n  \"phone\":\"50664041755\"\n}",
+                                CURLOPT_HTTPHEADER => [
+                                "Content-Type: application/json"
+                            ],
+                        ]);
+                        $response = curl_exec($curl);
+                        $err = curl_error($curl);
+                        curl_close($curl);
+                        if ($err) {
+                            echo "cURL Error #:" . $err;
+                        } else {
+                            //echo $response;
+                            echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                        }
+                        echo '<script>console.log("Paso 2 Notificacion")</script>';
+                        //Final de envío de notificación por WhatsApp a Elizabeth de BMW
 
-                            //inicio de envío de notificación por WhatsApp a César
+                        //inicio de envío de notificación por WhatsApp a Maritza de BMW
+                        $curl = curl_init();
+                        curl_setopt_array($curl, [
+                            CURLOPT_PORT => "3020",
+                            CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                            CURLOPT_RETURNTRANSFER => true,
+                            CURLOPT_ENCODING => "",
+                            CURLOPT_MAXREDIRS => 10,
+                            CURLOPT_TIMEOUT => 30,
+                            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                            CURLOPT_CUSTOMREQUEST => "POST",
+                            CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Maritza! El colaborador $nombre, con la cédula $cedula ha registrado su inicio de labores, sin embargo, no se registró ninguna ubicación.\",\n  \"phone\":\"50683307411\"\n}",
+                            CURLOPT_HTTPHEADER => [
+                            "Content-Type: application/json"
+                        ],
+                    ]);
+                    $response = curl_exec($curl);
+                    $err = curl_error($curl);
+                    curl_close($curl);
+                    if ($err) {
+                        echo "cURL Error #:" . $err;
+                    } else {
+                        //echo $response;
+                        echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                    }
+                    echo '<script>console.log("Paso 2 Notificacion")</script>';
+                    //Final de envío de notificación por WhatsApp a Maritza de BMW
+
+
+                    }else{
+
+                    //Notificaciones con Ubicación
+
+                    //inicio de envío de notificación por WhatsApp a César
                             $curl = curl_init();
                             curl_setopt_array($curl, [
                                 CURLOPT_PORT => "3020",
@@ -377,9 +489,9 @@
                             echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
                         }
                         echo '<script>console.log("Paso 2 Notificacion")</script>';
-                        //Final de envío de notificación por WhatsApp a César
+                    //Final de envío de notificación por WhatsApp a César
     
-                        //inicio de envío de notificación por WhatsApp a Josué
+                    //inicio de envío de notificación por WhatsApp a Josué
                         $curl = curl_init();
                             curl_setopt_array($curl, [
                                 CURLOPT_PORT => "3020",
@@ -405,9 +517,9 @@
                             echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
                         }
                         echo '<script>console.log("Paso 2 Notificacion")</script>';
-                        //Final de envío de notificación por WhatsApp a Josué
+                    //Final de envío de notificación por WhatsApp a Josué
     
-                        //inicio de envío de notificación por WhatsApp a Andrea
+                    //inicio de envío de notificación por WhatsApp a Andrea
                         $curl = curl_init();
                             curl_setopt_array($curl, [
                                 CURLOPT_PORT => "3020",
@@ -433,9 +545,9 @@
                             echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
                         }
                         echo '<script>console.log("Paso 2 Notificacion")</script>';
-                        //Final de envío de notificación por WhatsApp a Andrea
+                    //Final de envío de notificación por WhatsApp a Andrea
 
-                        //inicio de envío de notificación por WhatsApp a Emilio de Calidad
+                    //inicio de envío de notificación por WhatsApp a Emilio de Calidad
                         $curl = curl_init();
                             curl_setopt_array($curl, [
                                 CURLOPT_PORT => "3020",
@@ -461,9 +573,9 @@
                             echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
                         }
                         echo '<script>console.log("Paso 2 Notificacion")</script>';
-                        //Final de envío de notificación por WhatsApp a Emilio de Calidad
+                    //Final de envío de notificación por WhatsApp a Emilio de Calidad
 
-                        //inicio de envío de notificación por WhatsApp al administrador Jeffry Robles
+                    //inicio de envío de notificación por WhatsApp al administrador Jeffry Robles
                         $curl = curl_init();
                             curl_setopt_array($curl, [
                                 CURLOPT_PORT => "3020",
@@ -489,9 +601,9 @@
                             echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
                         }
                         echo '<script>console.log("Paso 2 Notificacion")</script>';
-                        //Final de envío de notificación por WhatsApp al administrador Jeffry Robles
+                    //Final de envío de notificación por WhatsApp al administrador Jeffry Robles
 
-                                //inicio de envío de notificación por WhatsApp a RRHH Hilary
+                    //inicio de envío de notificación por WhatsApp a RRHH Hilary
                                 $curl = curl_init();
                                 curl_setopt_array($curl, [
                                     CURLOPT_PORT => "3020",
@@ -517,9 +629,9 @@
                                 echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
                             }
                             echo '<script>console.log("Paso 2 Notificacion")</script>';
-                            //Final de envío de notificación por WhatsApp RRHH Hilary
+                    //Final de envío de notificación por WhatsApp RRHH Hilary
 
-                        //inicio de envío de notificación por WhatsApp al Supervisor
+                    //inicio de envío de notificación por WhatsApp al Supervisor
                         $curl = curl_init();
                             curl_setopt_array($curl, [
                                 CURLOPT_PORT => "3020",
@@ -545,8 +657,119 @@
                             echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
                         }
                         echo '<script>console.log("Paso 2 Notificacion")</script>';
-                        //Final de envío de notificación por WhatsApp al Supervisor
+                    //Final de envío de notificación por WhatsApp al Supervisor
 
+                    //inicio de envío de notificación por WhatsApp a Supervisor Leonardo
+                        $curl = curl_init();
+                        curl_setopt_array($curl, [
+                            CURLOPT_PORT => "3020",
+                            CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                            CURLOPT_RETURNTRANSFER => true,
+                            CURLOPT_ENCODING => "",
+                            CURLOPT_MAXREDIRS => 10,
+                            CURLOPT_TIMEOUT => 30,
+                            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                            CURLOPT_CUSTOMREQUEST => "POST",
+                            CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Leonardo! El colaborador $nombre, con la cédula $cedula ha registrado su inicio de labores desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50663710437\"\n}",
+                            CURLOPT_HTTPHEADER => [
+                            "Content-Type: application/json"
+                        ],
+                    ]);
+                    $response = curl_exec($curl);
+                    $err = curl_error($curl);
+                    curl_close($curl);
+                    if ($err) {
+                        echo "cURL Error #:" . $err;
+                    } else {
+                        //echo $response;
+                        echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                    }
+                    echo '<script>console.log("Paso 2 Notificacion")</script>';
+                    //Final de envío de notificación por WhatsApp a Supervisor Leonardo
+
+                    //inicio de envío de notificación por WhatsApp a Mario Moya
+                        $curl = curl_init();
+                        curl_setopt_array($curl, [
+                            CURLOPT_PORT => "3020",
+                            CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                            CURLOPT_RETURNTRANSFER => true,
+                            CURLOPT_ENCODING => "",
+                            CURLOPT_MAXREDIRS => 10,
+                            CURLOPT_TIMEOUT => 30,
+                            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                            CURLOPT_CUSTOMREQUEST => "POST",
+                            CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Mario! El colaborador $nombre, con la cédula $cedula ha registrado su inicio de labores desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50671181265\"\n}",
+                            CURLOPT_HTTPHEADER => [
+                            "Content-Type: application/json"
+                        ],
+                    ]);
+                    $response = curl_exec($curl);
+                    $err = curl_error($curl);
+                    curl_close($curl);
+                    if ($err) {
+                        echo "cURL Error #:" . $err;
+                    } else {
+                        //echo $response;
+                        echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                    }
+                    echo '<script>console.log("Paso 2 Notificacion")</script>';
+                    //Final de envío de notificación por WhatsApp a Mario Moya
+
+                    //inicio de envío de notificación por WhatsApp a Elizabeth de BMW
+                        $curl = curl_init();
+                        curl_setopt_array($curl, [
+                            CURLOPT_PORT => "3020",
+                            CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                            CURLOPT_RETURNTRANSFER => true,
+                            CURLOPT_ENCODING => "",
+                            CURLOPT_MAXREDIRS => 10,
+                            CURLOPT_TIMEOUT => 30,
+                            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                            CURLOPT_CUSTOMREQUEST => "POST",
+                            CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Elizabeth! El colaborador $nombre, con la cédula $cedula ha registrado su inicio de labores desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50664041755\"\n}",
+                            CURLOPT_HTTPHEADER => [
+                            "Content-Type: application/json"
+                        ],
+                    ]);
+                    $response = curl_exec($curl);
+                    $err = curl_error($curl);
+                    curl_close($curl);
+                    if ($err) {
+                        echo "cURL Error #:" . $err;
+                    } else {
+                        //echo $response;
+                        echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                    }
+                    echo '<script>console.log("Paso 2 Notificacion")</script>';
+                    //Final de envío de notificación por WhatsApp a Elizabeth de BMW
+
+                    //inicio de envío de notificación por WhatsApp a Maritza de BMW
+                        $curl = curl_init();
+                        curl_setopt_array($curl, [
+                            CURLOPT_PORT => "3020",
+                            CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                            CURLOPT_RETURNTRANSFER => true,
+                            CURLOPT_ENCODING => "",
+                            CURLOPT_MAXREDIRS => 10,
+                            CURLOPT_TIMEOUT => 30,
+                            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                            CURLOPT_CUSTOMREQUEST => "POST",
+                            CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Maritza! El colaborador $nombre, con la cédula $cedula ha registrado su inicio de labores desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50683307411\"\n}",
+                            CURLOPT_HTTPHEADER => [
+                            "Content-Type: application/json"
+                        ],
+                    ]);
+                    $response = curl_exec($curl);
+                    $err = curl_error($curl);
+                    curl_close($curl);
+                    if ($err) {
+                        echo "cURL Error #:" . $err;
+                    } else {
+                        //echo $response;
+                        echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                    }
+                    echo '<script>console.log("Paso 2 Notificacion")</script>';
+                    //Final de envío de notificación por WhatsApp a Maritza de BMW
 
                             }
 
@@ -786,6 +1009,118 @@
                             }
                             echo '<script>console.log("Paso 2 Notificacion")</script>';
                             //Final de envío de notificación por WhatsApp al Supervisor
+
+                        //inicio de envío de notificación por WhatsApp a Supervisor Leonardo
+                        $curl = curl_init();
+                        curl_setopt_array($curl, [
+                            CURLOPT_PORT => "3020",
+                            CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                            CURLOPT_RETURNTRANSFER => true,
+                            CURLOPT_ENCODING => "",
+                            CURLOPT_MAXREDIRS => 10,
+                            CURLOPT_TIMEOUT => 30,
+                            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                            CURLOPT_CUSTOMREQUEST => "POST",
+                            CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Leonardo! El colaborador $nombre, con la cédula $cedula ha registrado su finalización de labores, sin embargo, no se registró ninguna ubicación.\",\n  \"phone\":\"50663710437\"\n}",
+                            CURLOPT_HTTPHEADER => [
+                            "Content-Type: application/json"
+                        ],
+                    ]);
+                    $response = curl_exec($curl);
+                    $err = curl_error($curl);
+                    curl_close($curl);
+                    if ($err) {
+                        echo "cURL Error #:" . $err;
+                    } else {
+                        //echo $response;
+                        echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                    }
+                    echo '<script>console.log("Paso 2 Notificacion")</script>';
+                    //Final de envío de notificación por WhatsApp a Supervisor Leonardo
+
+                    //inicio de envío de notificación por WhatsApp a Mario Moya
+                        $curl = curl_init();
+                        curl_setopt_array($curl, [
+                            CURLOPT_PORT => "3020",
+                            CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                            CURLOPT_RETURNTRANSFER => true,
+                            CURLOPT_ENCODING => "",
+                            CURLOPT_MAXREDIRS => 10,
+                            CURLOPT_TIMEOUT => 30,
+                            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                            CURLOPT_CUSTOMREQUEST => "POST",
+                            CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Mario! El colaborador $nombre, con la cédula $cedula ha registrado su finalización de labores, sin embargo, no se registró ninguna ubicación.\",\n  \"phone\":\"50671181265\"\n}",
+                            CURLOPT_HTTPHEADER => [
+                            "Content-Type: application/json"
+                        ],
+                    ]);
+                    $response = curl_exec($curl);
+                    $err = curl_error($curl);
+                    curl_close($curl);
+                    if ($err) {
+                        echo "cURL Error #:" . $err;
+                    } else {
+                        //echo $response;
+                        echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                    }
+                    echo '<script>console.log("Paso 2 Notificacion")</script>';
+                    //Final de envío de notificación por WhatsApp a Mario Moya
+
+                    //inicio de envío de notificación por WhatsApp a Elizabeth de BMW
+                        $curl = curl_init();
+                        curl_setopt_array($curl, [
+                            CURLOPT_PORT => "3020",
+                            CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                            CURLOPT_RETURNTRANSFER => true,
+                            CURLOPT_ENCODING => "",
+                            CURLOPT_MAXREDIRS => 10,
+                            CURLOPT_TIMEOUT => 30,
+                            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                            CURLOPT_CUSTOMREQUEST => "POST",
+                            CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Elizabeth! El colaborador $nombre, con la cédula $cedula ha registrado su finalización de labores, sin embargo, no se registró ninguna ubicación.\",\n  \"phone\":\"50664041755\"\n}",
+                            CURLOPT_HTTPHEADER => [
+                            "Content-Type: application/json"
+                        ],
+                    ]);
+                    $response = curl_exec($curl);
+                    $err = curl_error($curl);
+                    curl_close($curl);
+                    if ($err) {
+                        echo "cURL Error #:" . $err;
+                    } else {
+                        //echo $response;
+                        echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                    }
+                    echo '<script>console.log("Paso 2 Notificacion")</script>';
+                    //Final de envío de notificación por WhatsApp a Elizabeth de BMW
+
+                    //inicio de envío de notificación por WhatsApp a Maritza de BMW
+                    $curl = curl_init();
+                    curl_setopt_array($curl, [
+                        CURLOPT_PORT => "3020",
+                        CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                        CURLOPT_RETURNTRANSFER => true,
+                        CURLOPT_ENCODING => "",
+                        CURLOPT_MAXREDIRS => 10,
+                        CURLOPT_TIMEOUT => 30,
+                        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                        CURLOPT_CUSTOMREQUEST => "POST",
+                        CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Maritza! El colaborador $nombre, con la cédula $cedula ha registrado su finalización de labores, sin embargo, no se registró ninguna ubicación.\",\n  \"phone\":\"50683307411\"\n}",
+                        CURLOPT_HTTPHEADER => [
+                        "Content-Type: application/json"
+                    ],
+                ]);
+                $response = curl_exec($curl);
+                $err = curl_error($curl);
+                curl_close($curl);
+                if ($err) {
+                    echo "cURL Error #:" . $err;
+                } else {
+                    //echo $response;
+                    echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                }
+                echo '<script>console.log("Paso 2 Notificacion")</script>';
+                //Final de envío de notificación por WhatsApp a Maritza de BMW
     
     
                                 }else{
@@ -987,6 +1322,118 @@
                             }
                             echo '<script>console.log("Paso 2 Notificacion")</script>';
                             //Final de envío de notificación por WhatsApp al Supervisor
+
+                    //inicio de envío de notificación por WhatsApp a Supervisor Leonardo
+                    $curl = curl_init();
+                    curl_setopt_array($curl, [
+                        CURLOPT_PORT => "3020",
+                        CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                        CURLOPT_RETURNTRANSFER => true,
+                        CURLOPT_ENCODING => "",
+                        CURLOPT_MAXREDIRS => 10,
+                        CURLOPT_TIMEOUT => 30,
+                        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                        CURLOPT_CUSTOMREQUEST => "POST",
+                        CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Leonardo! El colaborador $nombre, con la cédula $cedula ha registrado su finalización de labores desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50663710437\"\n}",
+                        CURLOPT_HTTPHEADER => [
+                        "Content-Type: application/json"
+                    ],
+                ]);
+                $response = curl_exec($curl);
+                $err = curl_error($curl);
+                curl_close($curl);
+                if ($err) {
+                    echo "cURL Error #:" . $err;
+                } else {
+                    //echo $response;
+                    echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                }
+                echo '<script>console.log("Paso 2 Notificacion")</script>';
+                //Final de envío de notificación por WhatsApp a Supervisor Leonardo
+
+                //inicio de envío de notificación por WhatsApp a Mario Moya
+                    $curl = curl_init();
+                    curl_setopt_array($curl, [
+                        CURLOPT_PORT => "3020",
+                        CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                        CURLOPT_RETURNTRANSFER => true,
+                        CURLOPT_ENCODING => "",
+                        CURLOPT_MAXREDIRS => 10,
+                        CURLOPT_TIMEOUT => 30,
+                        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                        CURLOPT_CUSTOMREQUEST => "POST",
+                        CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Mario! El colaborador $nombre, con la cédula $cedula ha registrado su finalización de labores desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50671181265\"\n}",
+                        CURLOPT_HTTPHEADER => [
+                        "Content-Type: application/json"
+                    ],
+                ]);
+                $response = curl_exec($curl);
+                $err = curl_error($curl);
+                curl_close($curl);
+                if ($err) {
+                    echo "cURL Error #:" . $err;
+                } else {
+                    //echo $response;
+                    echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                }
+                echo '<script>console.log("Paso 2 Notificacion")</script>';
+                //Final de envío de notificación por WhatsApp a Mario Moya
+
+                //inicio de envío de notificación por WhatsApp a Elizabeth de BMW
+                    $curl = curl_init();
+                    curl_setopt_array($curl, [
+                        CURLOPT_PORT => "3020",
+                        CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                        CURLOPT_RETURNTRANSFER => true,
+                        CURLOPT_ENCODING => "",
+                        CURLOPT_MAXREDIRS => 10,
+                        CURLOPT_TIMEOUT => 30,
+                        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                        CURLOPT_CUSTOMREQUEST => "POST",
+                        CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Elizabeth! El colaborador $nombre, con la cédula $cedula ha registrado su finalización de labores desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50664041755\"\n}",
+                        CURLOPT_HTTPHEADER => [
+                        "Content-Type: application/json"
+                    ],
+                ]);
+                $response = curl_exec($curl);
+                $err = curl_error($curl);
+                curl_close($curl);
+                if ($err) {
+                    echo "cURL Error #:" . $err;
+                } else {
+                    //echo $response;
+                    echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                }
+                echo '<script>console.log("Paso 2 Notificacion")</script>';
+                //Final de envío de notificación por WhatsApp a Elizabeth de BMW
+
+                //inicio de envío de notificación por WhatsApp a Maritza de BMW
+                    $curl = curl_init();
+                    curl_setopt_array($curl, [
+                        CURLOPT_PORT => "3020",
+                        CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                        CURLOPT_RETURNTRANSFER => true,
+                        CURLOPT_ENCODING => "",
+                        CURLOPT_MAXREDIRS => 10,
+                        CURLOPT_TIMEOUT => 30,
+                        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                        CURLOPT_CUSTOMREQUEST => "POST",
+                        CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Maritza! El colaborador $nombre, con la cédula $cedula ha registrado su finalización de labores desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50683307411\"\n}",
+                        CURLOPT_HTTPHEADER => [
+                        "Content-Type: application/json"
+                    ],
+                ]);
+                $response = curl_exec($curl);
+                $err = curl_error($curl);
+                curl_close($curl);
+                if ($err) {
+                    echo "cURL Error #:" . $err;
+                } else {
+                    //echo $response;
+                    echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                }
+                echo '<script>console.log("Paso 2 Notificacion")</script>';
+                //Final de envío de notificación por WhatsApp a Maritza de BMW
     
     
                                 }
@@ -1219,6 +1666,118 @@
                                 }
                                 echo '<script>console.log("Paso 2 Notificacion")</script>';
                                 //Final de envío de notificación por WhatsApp al Supervisor
+
+                        //inicio de envío de notificación por WhatsApp a Supervisor Leonardo
+                        $curl = curl_init();
+                        curl_setopt_array($curl, [
+                            CURLOPT_PORT => "3020",
+                            CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                            CURLOPT_RETURNTRANSFER => true,
+                            CURLOPT_ENCODING => "",
+                            CURLOPT_MAXREDIRS => 10,
+                            CURLOPT_TIMEOUT => 30,
+                            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                            CURLOPT_CUSTOMREQUEST => "POST",
+                            CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Leonardo! El colaborador $nombre, con la cédula $cedula ha registrado su salida a almuerzo, sin embargo, no se registró ninguna ubicación.\",\n  \"phone\":\"50663710437\"\n}",
+                            CURLOPT_HTTPHEADER => [
+                            "Content-Type: application/json"
+                        ],
+                    ]);
+                    $response = curl_exec($curl);
+                    $err = curl_error($curl);
+                    curl_close($curl);
+                    if ($err) {
+                        echo "cURL Error #:" . $err;
+                    } else {
+                        //echo $response;
+                        echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                    }
+                    echo '<script>console.log("Paso 2 Notificacion")</script>';
+                    //Final de envío de notificación por WhatsApp a Supervisor Leonardo
+
+                    //inicio de envío de notificación por WhatsApp a Mario Moya
+                        $curl = curl_init();
+                        curl_setopt_array($curl, [
+                            CURLOPT_PORT => "3020",
+                            CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                            CURLOPT_RETURNTRANSFER => true,
+                            CURLOPT_ENCODING => "",
+                            CURLOPT_MAXREDIRS => 10,
+                            CURLOPT_TIMEOUT => 30,
+                            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                            CURLOPT_CUSTOMREQUEST => "POST",
+                            CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Mario! El colaborador $nombre, con la cédula $cedula ha registrado su salida a almuerzo, sin embargo, no se registró ninguna ubicación.\",\n  \"phone\":\"50671181265\"\n}",
+                            CURLOPT_HTTPHEADER => [
+                            "Content-Type: application/json"
+                        ],
+                    ]);
+                    $response = curl_exec($curl);
+                    $err = curl_error($curl);
+                    curl_close($curl);
+                    if ($err) {
+                        echo "cURL Error #:" . $err;
+                    } else {
+                        //echo $response;
+                        echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                    }
+                    echo '<script>console.log("Paso 2 Notificacion")</script>';
+                    //Final de envío de notificación por WhatsApp a Mario Moya
+
+                    //inicio de envío de notificación por WhatsApp a Elizabeth de BMW
+                        $curl = curl_init();
+                        curl_setopt_array($curl, [
+                            CURLOPT_PORT => "3020",
+                            CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                            CURLOPT_RETURNTRANSFER => true,
+                            CURLOPT_ENCODING => "",
+                            CURLOPT_MAXREDIRS => 10,
+                            CURLOPT_TIMEOUT => 30,
+                            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                            CURLOPT_CUSTOMREQUEST => "POST",
+                            CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Elizabeth! El colaborador $nombre, con la cédula $cedula ha registrado su salida a almuerzo, sin embargo, no se registró ninguna ubicación.\",\n  \"phone\":\"50664041755\"\n}",
+                            CURLOPT_HTTPHEADER => [
+                            "Content-Type: application/json"
+                        ],
+                    ]);
+                    $response = curl_exec($curl);
+                    $err = curl_error($curl);
+                    curl_close($curl);
+                    if ($err) {
+                        echo "cURL Error #:" . $err;
+                    } else {
+                        //echo $response;
+                        echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                    }
+                    echo '<script>console.log("Paso 2 Notificacion")</script>';
+                    //Final de envío de notificación por WhatsApp a Elizabeth de BMW
+
+                    //inicio de envío de notificación por WhatsApp a Maritza de BMW
+                    $curl = curl_init();
+                    curl_setopt_array($curl, [
+                        CURLOPT_PORT => "3020",
+                        CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                        CURLOPT_RETURNTRANSFER => true,
+                        CURLOPT_ENCODING => "",
+                        CURLOPT_MAXREDIRS => 10,
+                        CURLOPT_TIMEOUT => 30,
+                        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                        CURLOPT_CUSTOMREQUEST => "POST",
+                        CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Maritza! El colaborador $nombre, con la cédula $cedula ha registrado su salida a almuerzo, sin embargo, no se registró ninguna ubicación.\",\n  \"phone\":\"50683307411\"\n}",
+                        CURLOPT_HTTPHEADER => [
+                        "Content-Type: application/json"
+                    ],
+                ]);
+                $response = curl_exec($curl);
+                $err = curl_error($curl);
+                curl_close($curl);
+                if ($err) {
+                    echo "cURL Error #:" . $err;
+                } else {
+                    //echo $response;
+                    echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                }
+                echo '<script>console.log("Paso 2 Notificacion")</script>';
+                //Final de envío de notificación por WhatsApp a Maritza de BMW
         
         
                                     }else{
@@ -1420,6 +1979,118 @@
                                 }
                                 echo '<script>console.log("Paso 2 Notificacion")</script>';
                                 //Final de envío de notificación por WhatsApp al Supervisor
+
+                            //inicio de envío de notificación por WhatsApp a Supervisor Leonardo
+                            $curl = curl_init();
+                            curl_setopt_array($curl, [
+                                CURLOPT_PORT => "3020",
+                                CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                                CURLOPT_RETURNTRANSFER => true,
+                                CURLOPT_ENCODING => "",
+                                CURLOPT_MAXREDIRS => 10,
+                                CURLOPT_TIMEOUT => 30,
+                                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                                CURLOPT_CUSTOMREQUEST => "POST",
+                                CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Leonardo! El colaborador $nombre, con la cédula $cedula ha registrado su salida a almuerzo desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50663710437\"\n}",
+                                CURLOPT_HTTPHEADER => [
+                                "Content-Type: application/json"
+                            ],
+                        ]);
+                        $response = curl_exec($curl);
+                        $err = curl_error($curl);
+                        curl_close($curl);
+                        if ($err) {
+                            echo "cURL Error #:" . $err;
+                        } else {
+                            //echo $response;
+                            echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                        }
+                        echo '<script>console.log("Paso 2 Notificacion")</script>';
+                        //Final de envío de notificación por WhatsApp a Supervisor Leonardo
+    
+                        //inicio de envío de notificación por WhatsApp a Mario Moya
+                            $curl = curl_init();
+                            curl_setopt_array($curl, [
+                                CURLOPT_PORT => "3020",
+                                CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                                CURLOPT_RETURNTRANSFER => true,
+                                CURLOPT_ENCODING => "",
+                                CURLOPT_MAXREDIRS => 10,
+                                CURLOPT_TIMEOUT => 30,
+                                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                                CURLOPT_CUSTOMREQUEST => "POST",
+                                CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Mario! El colaborador $nombre, con la cédula $cedula ha registrado su salida a almuerzo desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50671181265\"\n}",
+                                CURLOPT_HTTPHEADER => [
+                                "Content-Type: application/json"
+                            ],
+                        ]);
+                        $response = curl_exec($curl);
+                        $err = curl_error($curl);
+                        curl_close($curl);
+                        if ($err) {
+                            echo "cURL Error #:" . $err;
+                        } else {
+                            //echo $response;
+                            echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                        }
+                        echo '<script>console.log("Paso 2 Notificacion")</script>';
+                        //Final de envío de notificación por WhatsApp a Mario Moya
+    
+                        //inicio de envío de notificación por WhatsApp a Elizabeth de BMW
+                            $curl = curl_init();
+                            curl_setopt_array($curl, [
+                                CURLOPT_PORT => "3020",
+                                CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                                CURLOPT_RETURNTRANSFER => true,
+                                CURLOPT_ENCODING => "",
+                                CURLOPT_MAXREDIRS => 10,
+                                CURLOPT_TIMEOUT => 30,
+                                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                                CURLOPT_CUSTOMREQUEST => "POST",
+                                CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Elizabeth! El colaborador $nombre, con la cédula $cedula ha registrado su salida a almuerzo desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50664041755\"\n}",
+                                CURLOPT_HTTPHEADER => [
+                                "Content-Type: application/json"
+                            ],
+                        ]);
+                        $response = curl_exec($curl);
+                        $err = curl_error($curl);
+                        curl_close($curl);
+                        if ($err) {
+                            echo "cURL Error #:" . $err;
+                        } else {
+                            //echo $response;
+                            echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                        }
+                        echo '<script>console.log("Paso 2 Notificacion")</script>';
+                        //Final de envío de notificación por WhatsApp a Elizabeth de BMW
+    
+                        //inicio de envío de notificación por WhatsApp a Maritza de BMW
+                            $curl = curl_init();
+                            curl_setopt_array($curl, [
+                                CURLOPT_PORT => "3020",
+                                CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                                CURLOPT_RETURNTRANSFER => true,
+                                CURLOPT_ENCODING => "",
+                                CURLOPT_MAXREDIRS => 10,
+                                CURLOPT_TIMEOUT => 30,
+                                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                                CURLOPT_CUSTOMREQUEST => "POST",
+                                CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Maritza! El colaborador $nombre, con la cédula $cedula ha registrado su salida a almuerzo desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50683307411\"\n}",
+                                CURLOPT_HTTPHEADER => [
+                                "Content-Type: application/json"
+                            ],
+                        ]);
+                        $response = curl_exec($curl);
+                        $err = curl_error($curl);
+                        curl_close($curl);
+                        if ($err) {
+                            echo "cURL Error #:" . $err;
+                        } else {
+                            //echo $response;
+                            echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                        }
+                        echo '<script>console.log("Paso 2 Notificacion")</script>';
+                        //Final de envío de notificación por WhatsApp a Maritza de BMW
         
         
                                     }
@@ -1653,6 +2324,118 @@
                                 }
                                 echo '<script>console.log("Paso 2 Notificacion")</script>';
                                 //Final de envío de notificación por WhatsApp al Supervisor
+
+                        //inicio de envío de notificación por WhatsApp a Supervisor Leonardo
+                        $curl = curl_init();
+                        curl_setopt_array($curl, [
+                            CURLOPT_PORT => "3020",
+                            CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                            CURLOPT_RETURNTRANSFER => true,
+                            CURLOPT_ENCODING => "",
+                            CURLOPT_MAXREDIRS => 10,
+                            CURLOPT_TIMEOUT => 30,
+                            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                            CURLOPT_CUSTOMREQUEST => "POST",
+                            CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Leonardo! El colaborador $nombre, con la cédula $cedula ha registrado su entrada después de almuerzo, sin embargo, no se registró ninguna ubicación.\",\n  \"phone\":\"50663710437\"\n}",
+                            CURLOPT_HTTPHEADER => [
+                            "Content-Type: application/json"
+                        ],
+                    ]);
+                    $response = curl_exec($curl);
+                    $err = curl_error($curl);
+                    curl_close($curl);
+                    if ($err) {
+                        echo "cURL Error #:" . $err;
+                    } else {
+                        //echo $response;
+                        echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                    }
+                    echo '<script>console.log("Paso 2 Notificacion")</script>';
+                    //Final de envío de notificación por WhatsApp a Supervisor Leonardo
+
+                    //inicio de envío de notificación por WhatsApp a Mario Moya
+                        $curl = curl_init();
+                        curl_setopt_array($curl, [
+                            CURLOPT_PORT => "3020",
+                            CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                            CURLOPT_RETURNTRANSFER => true,
+                            CURLOPT_ENCODING => "",
+                            CURLOPT_MAXREDIRS => 10,
+                            CURLOPT_TIMEOUT => 30,
+                            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                            CURLOPT_CUSTOMREQUEST => "POST",
+                            CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Mario! El colaborador $nombre, con la cédula $cedula ha registrado su entrada después de almuerzo, sin embargo, no se registró ninguna ubicación.\",\n  \"phone\":\"50671181265\"\n}",
+                            CURLOPT_HTTPHEADER => [
+                            "Content-Type: application/json"
+                        ],
+                    ]);
+                    $response = curl_exec($curl);
+                    $err = curl_error($curl);
+                    curl_close($curl);
+                    if ($err) {
+                        echo "cURL Error #:" . $err;
+                    } else {
+                        //echo $response;
+                        echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                    }
+                    echo '<script>console.log("Paso 2 Notificacion")</script>';
+                    //Final de envío de notificación por WhatsApp a Mario Moya
+
+                    //inicio de envío de notificación por WhatsApp a Elizabeth de BMW
+                        $curl = curl_init();
+                        curl_setopt_array($curl, [
+                            CURLOPT_PORT => "3020",
+                            CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                            CURLOPT_RETURNTRANSFER => true,
+                            CURLOPT_ENCODING => "",
+                            CURLOPT_MAXREDIRS => 10,
+                            CURLOPT_TIMEOUT => 30,
+                            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                            CURLOPT_CUSTOMREQUEST => "POST",
+                            CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Elizabeth! El colaborador $nombre, con la cédula $cedula ha registrado su entrada después de almuerzo, sin embargo, no se registró ninguna ubicación.\",\n  \"phone\":\"50664041755\"\n}",
+                            CURLOPT_HTTPHEADER => [
+                            "Content-Type: application/json"
+                        ],
+                    ]);
+                    $response = curl_exec($curl);
+                    $err = curl_error($curl);
+                    curl_close($curl);
+                    if ($err) {
+                        echo "cURL Error #:" . $err;
+                    } else {
+                        //echo $response;
+                        echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                    }
+                    echo '<script>console.log("Paso 2 Notificacion")</script>';
+                    //Final de envío de notificación por WhatsApp a Elizabeth de BMW
+
+                    //inicio de envío de notificación por WhatsApp a Maritza de BMW
+                    $curl = curl_init();
+                    curl_setopt_array($curl, [
+                        CURLOPT_PORT => "3020",
+                        CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                        CURLOPT_RETURNTRANSFER => true,
+                        CURLOPT_ENCODING => "",
+                        CURLOPT_MAXREDIRS => 10,
+                        CURLOPT_TIMEOUT => 30,
+                        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                        CURLOPT_CUSTOMREQUEST => "POST",
+                        CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Maritza! El colaborador $nombre, con la cédula $cedula ha registrado su entrada después de almuerzo, sin embargo, no se registró ninguna ubicación.\",\n  \"phone\":\"50683307411\"\n}",
+                        CURLOPT_HTTPHEADER => [
+                        "Content-Type: application/json"
+                    ],
+                ]);
+                $response = curl_exec($curl);
+                $err = curl_error($curl);
+                curl_close($curl);
+                if ($err) {
+                    echo "cURL Error #:" . $err;
+                } else {
+                    //echo $response;
+                    echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                }
+                echo '<script>console.log("Paso 2 Notificacion")</script>';
+                //Final de envío de notificación por WhatsApp a Maritza de BMW
         
         
                                     }else{
@@ -1854,6 +2637,118 @@
                                 }
                                 echo '<script>console.log("Paso 2 Notificacion")</script>';
                                 //Final de envío de notificación por WhatsApp al Supervisor
+
+                    //inicio de envío de notificación por WhatsApp a Supervisor Leonardo
+                    $curl = curl_init();
+                    curl_setopt_array($curl, [
+                        CURLOPT_PORT => "3020",
+                        CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                        CURLOPT_RETURNTRANSFER => true,
+                        CURLOPT_ENCODING => "",
+                        CURLOPT_MAXREDIRS => 10,
+                        CURLOPT_TIMEOUT => 30,
+                        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                        CURLOPT_CUSTOMREQUEST => "POST",
+                        CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Leonardo! El colaborador $nombre, con la cédula $cedula ha registrado su entrada después de almuerzo desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50663710437\"\n}",
+                        CURLOPT_HTTPHEADER => [
+                        "Content-Type: application/json"
+                    ],
+                ]);
+                $response = curl_exec($curl);
+                $err = curl_error($curl);
+                curl_close($curl);
+                if ($err) {
+                    echo "cURL Error #:" . $err;
+                } else {
+                    //echo $response;
+                    echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                }
+                echo '<script>console.log("Paso 2 Notificacion")</script>';
+                //Final de envío de notificación por WhatsApp a Supervisor Leonardo
+
+                //inicio de envío de notificación por WhatsApp a Mario Moya
+                    $curl = curl_init();
+                    curl_setopt_array($curl, [
+                        CURLOPT_PORT => "3020",
+                        CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                        CURLOPT_RETURNTRANSFER => true,
+                        CURLOPT_ENCODING => "",
+                        CURLOPT_MAXREDIRS => 10,
+                        CURLOPT_TIMEOUT => 30,
+                        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                        CURLOPT_CUSTOMREQUEST => "POST",
+                        CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Mario! El colaborador $nombre, con la cédula $cedula ha registrado su entrada después de almuerzo desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50671181265\"\n}",
+                        CURLOPT_HTTPHEADER => [
+                        "Content-Type: application/json"
+                    ],
+                ]);
+                $response = curl_exec($curl);
+                $err = curl_error($curl);
+                curl_close($curl);
+                if ($err) {
+                    echo "cURL Error #:" . $err;
+                } else {
+                    //echo $response;
+                    echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                }
+                echo '<script>console.log("Paso 2 Notificacion")</script>';
+                //Final de envío de notificación por WhatsApp a Mario Moya
+
+                //inicio de envío de notificación por WhatsApp a Elizabeth de BMW
+                    $curl = curl_init();
+                    curl_setopt_array($curl, [
+                        CURLOPT_PORT => "3020",
+                        CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                        CURLOPT_RETURNTRANSFER => true,
+                        CURLOPT_ENCODING => "",
+                        CURLOPT_MAXREDIRS => 10,
+                        CURLOPT_TIMEOUT => 30,
+                        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                        CURLOPT_CUSTOMREQUEST => "POST",
+                        CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Elizabeth! El colaborador $nombre, con la cédula $cedula ha registrado su entrada después de almuerzo desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50664041755\"\n}",
+                        CURLOPT_HTTPHEADER => [
+                        "Content-Type: application/json"
+                    ],
+                ]);
+                $response = curl_exec($curl);
+                $err = curl_error($curl);
+                curl_close($curl);
+                if ($err) {
+                    echo "cURL Error #:" . $err;
+                } else {
+                    //echo $response;
+                    echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                }
+                echo '<script>console.log("Paso 2 Notificacion")</script>';
+                //Final de envío de notificación por WhatsApp a Elizabeth de BMW
+
+                //inicio de envío de notificación por WhatsApp a Maritza de BMW
+                    $curl = curl_init();
+                    curl_setopt_array($curl, [
+                        CURLOPT_PORT => "3020",
+                        CURLOPT_URL => "http://51.222.14.197:3020/lead",
+                        CURLOPT_RETURNTRANSFER => true,
+                        CURLOPT_ENCODING => "",
+                        CURLOPT_MAXREDIRS => 10,
+                        CURLOPT_TIMEOUT => 30,
+                        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                        CURLOPT_CUSTOMREQUEST => "POST",
+                        CURLOPT_POSTFIELDS => "{\n  \"message\":\"Hola Maritza! El colaborador $nombre, con la cédula $cedula ha registrado su entrada después de almuerzo desde la ubicación: https://www.google.com/maps/search/?api=1&query=$latitude%2C$longitude\",\n  \"phone\":\"50683307411\"\n}",
+                        CURLOPT_HTTPHEADER => [
+                        "Content-Type: application/json"
+                    ],
+                ]);
+                $response = curl_exec($curl);
+                $err = curl_error($curl);
+                curl_close($curl);
+                if ($err) {
+                    echo "cURL Error #:" . $err;
+                } else {
+                    //echo $response;
+                    echo '<script>console.log("Notificación enviada por WhatsApp exitosamente...")</script>';
+                }
+                echo '<script>console.log("Paso 2 Notificacion")</script>';
+                //Final de envío de notificación por WhatsApp a Maritza de BMW
         
         
                                     }
